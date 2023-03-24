@@ -1,5 +1,4 @@
 # Guess It
-**[Click here to view a breakdown of our work for Deliverable 4.](docs/archive/deliverable_4.md)**<br>
 **[Click here to view a demo (video and screenshots) of our project.](#demo)**
 
 <img width="1033" alt="Screen Shot 2022-03-01 at 7 03 37 PM" src="https://user-images.githubusercontent.com/71230219/156541685-a9966e6b-eb85-4cd4-87b3-1dc20e13e99f.png">
