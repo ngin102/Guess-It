@@ -1,0 +1,5 @@
+#!/bin/bash
+
+PORT=${PORT-4000}
+
+(cd app && php -S localhost:$PORT)

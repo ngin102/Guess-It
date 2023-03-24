@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
+    background-attachment: fixed;
+    height: 100%;
+}
+
+h1.title {
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    color: #355C7D;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #6C5B7B;
+}
+
+p.selected_setting {
+    font-family: Arial, sans-serif;
+    font-size: xx-large;
+    color: black;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.container#main{
+    margin-top: 30px
+  
+}
+
+.back{
+    flex-basis: 0%;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.back:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.titlebox{
+    font-size: 20px;
+    padding-right: 80px;
+    padding-left: 20px;
+}
+
+table.settings_table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.settings_table th, td { 
+    border: 1px solid white; 
+    padding: 15px;
+}
+
+table.settings_table td {
+    vertical-align: middle;
+}
+
+.toggle {
+    position: relative ;
+    display: inline-block;
+    width: 80px;
+    height: 27px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* Hide browser's default radio button */
+.toggle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* The actual toggle switch (circular part of the button) */
+.checkmark {
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+        
+/* Move checkmark once toggle is selected */
+.toggle input:checked + .checkmark  {
+    left: 54px;
+    background-color: #416E2A
+}
+
+.change_mode.btn-primary {
+    width: 320px;
+    height: 60px;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+    background-color: #c06b83;
+    color: black;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.apply.btn-primary {
+    width: 320px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+    background-color: #c06b83;
+    color: black;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.change_mode.btn-primary:hover {
+    box-shadow: 2px 2px 11px #6C5B7B; 
+}
+
+.apply.btn-primary:hover {
+    box-shadow: 2px 2px 11px #6C5B7B; 
+}

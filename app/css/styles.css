@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
+    background-attachment:fixed;
+    height: 100%;
+}
+
+h1.title {
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    color: #355C7D;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #6C5B7B;
+   
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.container#main{
+    margin-top: 30px
+  
+}
+
+.imageset{
+    flex-basis: 0%;
+    order: 2;
+    padding-left: 3px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.imageset:hover{
+    -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+
+.hintset{
+    flex-basis: 0%;
+    order: 2;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+.hintbtn:hover{
+    -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+.imagequestion{
+    flex-basis: 0%;
+    cursor: pointer;
+}
+
+.imagequestion:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.lbordimage{
+    flex-basis: 0%;
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+.lbordimage:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.back{
+    flex-basis: 0%;
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.back:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.titlebox{
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.input_guess{
+    padding-top: 50px;
+}
+.outside{
+    padding-top: 50px;
+}
+
+input[type=text], select, textarea {
+    background-color:transparent; 
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: black;
+    text-align: center;
+    height:100px;
+    width:100%;
+    font-size:35pt;
+    box-sizing: border-box;
+    resize: horizontal;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.time{
+    padding-right: 20px;
+}
+
+p#tries{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: black;
+    padding-left: 20px;
+}
+
+#arrow_area{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding-left: 20px;
+}
+
+
