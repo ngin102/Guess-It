@@ -18,7 +18,7 @@ Our project is a game called “Guess It,” that is similar in scope to “Word
 ## Documentation
 * **[UI Design System](docs/ui_design_system.pdf)**: A document containing the set of standards for the colour palette, fonts, icons, buttons, UI components and form elements for "Guess It."
 	- [Icons](app/icons): Icons used in the UI.
-* **[Installation](#installation)**: How to install "Guess It" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment, as instructed in the project outline. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
+* **[Installation](#installation)**: How to install "Guess It" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
 * **[How to Start Developing](#how-to-start-developing)**: Steps taken to ensure that the application runs properly in the development environment.
 * **[Deployment](#deployment)**: Deploying the project using the provided helper `./deploy.sh` script.
 * **[Upgrades](#upgrades)**: Upgrading the project using the provided helper `./upgrade.sh` script.
@@ -49,9 +49,7 @@ You will need the following technologies installed:
 
 
 The video below shows the helper `./setup.sh` script executing successfully. At the end of the video, we check that all required technologies were installed by checking the version of each technology in the terminal.
-
-https://user-images.githubusercontent.com/71230219/156786090-456bf468-97e4-46b1-94b9-37c97797a747.mov
-
+[![Setup Script](https://img.youtube.com/vi/o4hFMYfEZEQ/0.jpg)](https://youtu.be/o4hFMYfEZEQ "Setup Script Running")
 
 
 ### PHP
@@ -203,7 +201,9 @@ There is also a set of [migrations](https://github.com/professor-forward/project
 The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script.
 If the database is created and seeded and the server is running, you can then visit `http://localhost:4000` to see the application running. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-https://user-images.githubusercontent.com/71230219/156778493-5b61b830-8832-4013-933f-30d21460bcc1.mov
+
+[![Create and Server Script](https://img.youtube.com/vi/d4lq2iZ0378/0.jpg)](https://youtu.be/d4lq2iZ0378 "Create and Server Script Running")
+
 
 ## How to Start Developing
 To start developing, ensure that you have installed all necessary components to get "Guess It" running. Please view the [Installation Section](#installation) of this document.
@@ -217,7 +217,7 @@ If you are developing tests for the application, please view the [Testing Sectio
 
 The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-https://user-images.githubusercontent.com/71230219/156778493-5b61b830-8832-4013-933f-30d21460bcc1.mov
+[![Create and Server Script](https://img.youtube.com/vi/d4lq2iZ0378/0.jpg)](https://youtu.be/d4lq2iZ0378 "Create and Server Script Running")
 
 ## Deployment
 **A helper `./deploy.sh` script is provided to deploy the project.**
@@ -233,10 +233,7 @@ You can then visit `http://localhost:4000` to see the application running.
 The video below shows how `./deploy.sh` runs. All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
 
-
-https://user-images.githubusercontent.com/71230219/160471416-beea0ca6-b474-4a97-a358-65f10726daed.mp4
-
-
+[![Deploy Script](https://img.youtube.com/vi/lpdlDQssooA/0.jpg)](https://youtu.be/lpdlDQssooA "Deploy Script Running")
 
 
 ## Upgrades
@@ -255,7 +252,8 @@ You can then visit `http://localhost:4000` to see the application running.
 The video below shows how `./upgrade.sh` runs; we demo a change being made to the project (in the development environment) and how this change is reflected in the files in the temp folder once the script is called. All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
 The video below also shows the execution of `./upgrade.sh` such that the connection to the localhost is still running when the script is executed; the terminal indicates that a new connection can not be established, but this does not impact the project files being upgraded and your ability to run the upgraded project files without restarting the connection.
 
-https://user-images.githubusercontent.com/71230219/160472032-faf157c3-8092-442a-96c4-19f83a987fe8.mp4
+
+[![Upgrade Script](https://img.youtube.com/vi/9ctGmzYPMAY/0.jpg)](https://youtu.be/9ctGmzYPMAY "Upgrade Script Running")
 
 
 
@@ -275,7 +273,7 @@ The results of this script should be the combined output of running both the PHP
 The video below shows the helper script successfully running. All necessary components that are needed to run the tests were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
 
 
-https://user-images.githubusercontent.com/71230219/156781120-8a3d19cd-f8f1-4812-9b54-735b86f776b3.mov
+[![Tests Script](https://img.youtube.com/vi/F6BOB-6pHig/0.jpg)](https://youtu.be/F6BOB-6pHig "Tests Script Running")
 
 
 ### Manually Running the Tests
@@ -341,7 +339,7 @@ If the game is too difficult for you and you need some assistance, don't worry, 
 ## Demo
 A video demo of our project **(this video has audio)**:
 
-https://user-images.githubusercontent.com/71230219/161360460-3466f7cd-6068-45cf-88a9-636f4e6a56e6.mp4
+[![Demo](https://img.youtube.com/vi/dW0wHRrURuY/0.jpg)](https://youtu.be/dW0wHRrURuY "Guess It Demo")
 
 ### Screenshots
 The video demo as a set of screenshots (screenshots of available features).
