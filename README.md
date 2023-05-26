@@ -26,13 +26,6 @@ Our project is a game called “Guess It,” that is similar in scope to “Word
 * **[How to Play](#how-to-play)**: How to play "Guess It."
 * **[Demo](#demo)**: A demo of "Guess It," including a video demo.
 	- **[Screenshots (of available features)](#screenshots)**: The video demo as a set of screenshots.
-* **[Archived Documentation](docs/archive)**: Archived documentation from previous deliverables.
-	- [Deliverable 1](docs/archive/deliverable_1.md): README for Deliverable 1.
-	- [Deliverable 2](docs/archive/deliverable_2.md): README for Deliverable 2.
-		- [UI Design System for Deliverable 2](docs/archive/deliverable_2_ui_design_system.docx): The UI Design System as it appeared at the time of Deliverable 2 submission.
-	- [Deliverable 3](docs/archive/deliverable_3.md): README for Deliverable 3 with details involving the work we did for this deliverable.
-		- [UI Design System for Deliverable 3](docs/archive/deliverable_3_ui_design_system.pdf): The UI Design System as it appeared at the time of Deliverable 3 submission.
-	- [Deliverable 4](docs/archive/deliverable_4.md): README for Deliverable 4 with details involving the work we did for this deliverable.
 
 ## Installation
 **A helper `./setup.sh` script is provided to get components required to run "Guess It" working. <br>
