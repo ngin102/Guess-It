@@ -1,63 +1,162 @@
-body{
-  background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
-  background-attachment: fixed;
-  height: 100%;
+@import url('https://fonts.cdnfonts.com/css/renegade-pursuit');
+@import url('https://fonts.cdnfonts.com/css/utendo');
+
+* {
+    font-family: 'Utendo', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
+    background-attachment: fixed;
+    height: 100%;
+    color: #D7C0D0;
+    font-weight: normal;
+    overflow-x: auto;
 }
 
 h1.title {
-  font-family: Arial, sans-serif;
-  font-size: 70px;
-  font-weight: bold;
-  color: #355C7D;
-  text-shadow: 2px 2px 5px #6C5B7B;
-  padding-left: 20px;
+    font-family: 'Renegade Pursuit', sans-serif;
+    font-size: 4.375rem;
+    color: #F0D78C;
+    font-weight: bold;
+    text-align: center;
 }
 
-h2.subtitle {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  color: #355C7D;
-  font-weight: bold;
-  text-align: center;
-}
-
-.btn-container {
-  width: 150px;
-}
-
-.mode {
-  cursor: pointer;
-  width: 100%;
-  height: 60px;
-  font-size: 15px; 
-  font-family: Arial,sans-serif;
-  font-weight: bold;
-  background-color: #C06C84;
-  color: black;
-  border-radius: 12px;
-  margin: 10px;
-}
-
-.btn:hover {
-  box-shadow: 2px 2px 11px #6C5B7B; 
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 70vw;
 }
 
 .container#main{
-  margin-top: 30px
+    margin-top: 2rem;
+}
 
+.imageset{
+    flex-basis: 0%;
+    order: 2;
+    padding-left: 3px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.imageset:hover{
+    -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+
+.hintset{
+    flex-basis: 0%;
+    order: 2;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+.hintbtn:hover{
+    -webkit-filter: invert(1);
+   filter: invert(1);
 }
 
 .imagequestion{
-  flex-basis: 0%;
+    flex-basis: 0%;
+    cursor: pointer;
 }
 
 .imagequestion:hover{
-  -webkit-filter: invert(1);
-  filter: invert(1);
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
+
+.lbordimage{
+    flex-basis: 0%;
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+.lbordimage:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.back{
+    flex-basis: 0%;
+    cursor: pointer;
+    padding-right: 2.5rem;
+}
+
+.back:hover{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.titlebox{
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.input_guess{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 80vh;
+}
+
+.outside {
+    padding-top: 50px;
+    width: 31.25rem;
+    overflow-wrap: break-word;
+}  
+
+input[type=text], select, textarea {
+    background-color:transparent; 
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: black;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    font-size: 3rem;
+    box-sizing: border-box;
+    resize: horizontal;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #FFFF;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #D7C0D0;
+    margin: 1rem auto;
+}
+
+p#tries{
+    font-size: 24px;
+    font-weight: bold;
+    color: #D7C0D0;
+    margin: -1rem auto;
+}
+
+.toast-body {
+    color: rgb(0, 0, 0); 
+}
+
+#arrow_area{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 800px)
+{
+    h1.title {
+        font-size: 1.25rem;
+    }    
+}
+

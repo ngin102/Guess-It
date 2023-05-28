@@ -1,37 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/renegade-pursuit');
+@import url('https://fonts.cdnfonts.com/css/utendo');
+
+* {
+    font-family: 'Utendo', sans-serif;
+}
+
 body {
-    background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
+    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
     background-attachment: fixed;
     height: 100%;
-    margin: 0;
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding-bottom: 70px;
+    color: #D7C0D0;
+    font-weight: normal;
+    overflow-x: auto;
 }
 
 h1.title {
-    font-family: Arial, sans-serif;
-    font-size: 70px;
-    color: #355C7D;
+    font-family: 'Renegade Pursuit', sans-serif;
+    font-size: 4.375rem;
+    color: #F0D78C;
     font-weight: bold;
-    text-shadow: 2px 2px 5px #6C5B7B;
+    text-align: center;
 }
 
-.dateset{
-    flex-basis: 0%;
-    order: 2;
+.container#main{
+    margin-top: 3rem;
 }
 
 .titlebox{
     font-size: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 p.date {
-    font-family: Arial, sans-serif;
+    color: #D7C0D0;
     font-weight: bold;
-    color: black;
 }
 
 table.leaderboard_table {
@@ -64,8 +65,10 @@ table.leaderboard_table tr:hover {
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
-}  
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 70vw;
+}
 
 .titlebox{
     font-size: 20px;
@@ -83,3 +86,9 @@ table.leaderboard_table tr:hover {
     filter: invert(1);
 }
 
+@media screen and (max-width: 800px)
+{
+    h1.title {
+        font-size: 2rem;
+    }    
+}

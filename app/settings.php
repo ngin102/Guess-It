@@ -32,8 +32,8 @@
             <tr> <td><p class = "selected_setting" id ="selected_guess">Limited Guesses</p></td> 
                 <td>
                     <label class="toggle" id = "whole_tries">
-                        <input type = "checkbox" name = "limited_guesses" id = "toggle_2" >
-                        <span class = "checkmark"></span>
+                    <input type = "checkbox" name = "limited_guesses" id = "toggle_2" >
+                    <span class = "checkmark"></span>
                     </label>
                 </td></tr>
             </tbody>
@@ -41,10 +41,10 @@
 
         
         <!-- Code to change mode (redirects to main page) -->
-        <div class = "container">
+        <div class = "container" id = "btns-container">
             <!-- The button to redirect to the main page -->
-            <a href = "index.php"> <button id = "change_mode_btn" class = "change_mode btn-primary btn-lg">Change Game Mode</button></a>
-            <a href = "mainpage.php"> <button id = "apply" class = "apply btn-primary btn-lg">Apply</button></a>
+            <a href = "index.php"> <button id = "change_mode_btn" class = "main-btn btn-primary btn-lg">Change Game Mode</button></a>
+            <a href = "mainpage.php"> <button id = "apply" class = "main-btn btn-primary btn-lg">Apply Changes</button></a>
         </div>
 
         <script src = "./js/main.js" type = "module"></script>

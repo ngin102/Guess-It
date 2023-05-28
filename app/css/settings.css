@@ -1,33 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/renegade-pursuit');
+@import url('https://fonts.cdnfonts.com/css/utendo');
+
+* {
+    font-family: 'Utendo', sans-serif;
+}
+
+  
 body {
-    background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
+    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
     background-attachment: fixed;
     height: 100%;
 }
 
 h1.title {
-    font-family: Arial, sans-serif;
-    font-size: 70px;
-    color: #355C7D;
+    font-family: 'Renegade Pursuit', sans-serif;
+    font-size: 4.375rem;
+    color: #F0D78C;
     font-weight: bold;
-    text-shadow: 2px 2px 5px #6C5B7B;
+    text-align: center;
 }
 
 p.selected_setting {
-    font-family: Arial, sans-serif;
     font-size: xx-large;
-    color: black;
+    color: #FFFF;
     font-weight: bold;
 }
 
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 70vw;
 }  
 
 .container#main{
-    margin-top: 30px
-  
+    margin-top: 3rem;
+}
+
+.container#btns-container{
+    flex-direction: column;
+    margin-top: -1.2rem;
 }
 
 .back{
@@ -49,14 +62,23 @@ p.selected_setting {
 
 table.settings_table {
     border-collapse: collapse;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 2rem auto;
+    max-width: 70vw;
 }
 
+table.settings_table td {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
 table.settings_table th, td { 
-    border: 1px solid white; 
+    border: 1px solid #FFFF; 
     padding: 15px;
+    margin-top: 5rem;
 }
 
 table.settings_table td {
@@ -70,6 +92,7 @@ table.settings_table td {
     height: 27px;
     background-color: black;
     border-radius: 20px;
+    margin-top: -5rem;
 }
 
 /* Hide browser's default radio button */
@@ -83,7 +106,7 @@ table.settings_table td {
 .checkmark {
     cursor: pointer;
     position: absolute;
-    background-color: white;
+    background-color: #FFFF;
     top: 1px;
     left: 1px;
     height: 25px;
@@ -94,38 +117,28 @@ table.settings_table td {
 /* Move checkmark once toggle is selected */
 .toggle input:checked + .checkmark  {
     left: 54px;
-    background-color: #416E2A
+    background-color: #77BA99
 }
 
-.change_mode.btn-primary {
+.main-btn.btn-primary {
     width: 320px;
     height: 60px;
     font-size: 20px;
-    margin-right: 20px;
     font-weight: bold;
-    font-family: Arial,sans-serif;
-    background-color: #c06b83;
+    background-color: #D7C0D0;
     color: black;
     border-radius: 12px;
     margin-top: 20px;
     cursor: pointer;
 }
-.apply.btn-primary {
-    width: 320px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial,sans-serif;
-    background-color: #c06b83;
-    color: black;
-    border-radius: 12px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.change_mode.btn-primary:hover {
+
+.main-btn.btn-primary:hover {
     box-shadow: 2px 2px 11px #6C5B7B; 
 }
 
-.apply.btn-primary:hover {
-    box-shadow: 2px 2px 11px #6C5B7B; 
+@media screen and (max-width: 800px)
+{
+    h1.title {
+        font-size: 2rem;
+    }    
 }

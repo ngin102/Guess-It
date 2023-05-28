@@ -3,12 +3,12 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>Guess it!</title>
+        <title>Guess It</title>
         <meta name="description" content="Guess the hidden word in 6 tries. A new puzzle is available each day.">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-        <link rel = "stylesheet" href = "./CSS/styles.css"/>
+        <link rel = "stylesheet" href = "./CSS/mainpage.css"/>
     </head>
 
     <body>
@@ -22,7 +22,6 @@
                 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
-                            <!--<img src="..." class="rounded me-2" alt="...">-->
                             <strong class="me-auto">Hint</strong>
                         
                             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -57,7 +56,7 @@
 
             <div class ="timer" id="timer">
                 <p class = "time" id="time"></p>
-                    <p class = "tries" id="tries"></p>
+                <p class = "tries" id="tries"></p>
             </div>
         </div>
 
@@ -86,7 +85,6 @@
             </div>
             </div>
 
-        <!-- Since we have no javascript or PHP to analyze the inputted data a filler has been added here-->
         <div class = "container">
             <div class = "outside" id = "arrow_area">
         

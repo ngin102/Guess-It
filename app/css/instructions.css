@@ -1,42 +1,57 @@
+@import url('https://fonts.cdnfonts.com/css/renegade-pursuit');
+@import url('https://fonts.cdnfonts.com/css/utendo');
+
+* {
+  font-family: 'Utendo', sans-serif;
+}
+
 body {
-  padding-bottom: 50px;
-  font-weight: bold;
-  background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
+  background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
   background-attachment: fixed;
   height: 100%;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  font-weight: normal;
+  overflow-x: auto;
 }
 
 h1.title {
-  font-family: Arial, sans-serif;
-  font-size: 70px;
+  font-family: 'Renegade Pursuit', sans-serif;
+  font-size: 4.375rem;
+  color: #F0D78C;
   font-weight: bold;
-  color: #355C7D;
-  text-shadow: 2px 2px 5px #6C5B7B;
   text-align: center;
-  padding-left: 20px;
+  margin-left: 2rem;
+}
+
+.container#main{
+  margin-top: 3rem;
 }
 
 h3.subtitle {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  color: #355C7D;
+  color: #D7C0D0;
+  margin-top: 2rem;
 }
 
 h4.subheader {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  color: #355C7D;
+  color: #D7C0D0;
 }
 
 p.normal_text {
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
-  color: black;
+  color: #FFFF;
+}
+
+p.lead {
+  margin-top: 1rem;
+  text-align: center;
+  color: #FFFF;
+  max-width: 65%;
 }
 
 .back{
@@ -49,14 +64,28 @@ p.normal_text {
   filter: invert(1);
 }
 
-.titlebox{
-  font-size: 20px;
-  padding-right: 80px;
-  padding-left: 20px;
-}
-
 .container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  margin: 0 auto;
+  max-width: 70vw;
+}
+
+.container#text{
+  flex-direction: column;
+}
+
+@media screen and (max-width: 950px)
+{
+    h1.title {
+        font-size: 2rem;
+    }
+    
+    p.lead {
+      margin-top: 1rem;
+      text-align: center;
+      color: #FFFF;
+      max-width: 85%;
+    }
 }
