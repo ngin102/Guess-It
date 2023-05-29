@@ -1,62 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/renegade-pursuit');
+@import url('https://fonts.cdnfonts.com/css/utendo');
+
+* {
+    font-family: 'Utendo', sans-serif;
+}
+
+html, body {
+    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
+    overflow-x: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
     background-attachment: fixed;
     height: 100%;
 }
 
 h1.title {
-    font-family: Arial, sans-serif;
-    font-size: 70px;
-    color: #355C7D;
+    font-family: 'Renegade Pursuit', sans-serif;
+    font-size: 3.5rem;;
+    color: #D7C0D0;
     font-weight: bold;
-    text-shadow: 2px 2px 5px #6C5B7B;
+    text-align: center;
+    margin-left: 1rem;
 }
 
 p.selected_setting {
-    font-family: Arial, sans-serif;
-    font-size: xx-large;
-    color: black;
+    font-size: 1.8rem;
+    color: #F0D78C;
     font-weight: bold;
 }
 
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 70vw;
 }  
 
 .container#main{
-    margin-top: 30px
-  
+    margin-top: 3rem;
+}
+
+.container#btns-container{
+    flex-direction: column;
+    margin-top: -1.6rem;
 }
 
 .back{
     flex-basis: 0%;
     cursor: pointer;
-    padding-left: 20px;
+    margin-top: -0.4rem;
 }
 
 .back:hover{
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-
-.titlebox{
-    font-size: 20px;
-    padding-right: 80px;
-    padding-left: 20px;
+    scale: 1.09;
 }
 
 table.settings_table {
     border-collapse: collapse;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 2rem auto;
+    max-width: 70vw;
 }
 
+table.settings_table td {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
 table.settings_table th, td { 
-    border: 1px solid white; 
+    border: 1px solid #FFFF; 
     padding: 15px;
+    margin-top: 5rem;
 }
 
 table.settings_table td {
@@ -66,10 +88,11 @@ table.settings_table td {
 .toggle {
     position: relative ;
     display: inline-block;
-    width: 80px;
-    height: 27px;
+    width: 5rem;
+    height: 1.6875rem;
+    border-radius: 1.25rem;
     background-color: black;
-    border-radius: 20px;
+    margin-top: -5rem;
 }
 
 /* Hide browser's default radio button */
@@ -83,49 +106,35 @@ table.settings_table td {
 .checkmark {
     cursor: pointer;
     position: absolute;
-    background-color: white;
-    top: 1px;
-    left: 1px;
-    height: 25px;
-    width: 25px;
+    background-color: #FFFF;
+    top: 0.0625rem;
+    left: 0.0625rem;
+    height: 1.5625rem;
+    width: 1.5625rem;
     border-radius: 50%;
 }
         
 /* Move checkmark once toggle is selected */
 .toggle input:checked + .checkmark  {
-    left: 54px;
-    background-color: #416E2A
+    left: 3.375rem;
+    background-color: #295DCF;
 }
 
-.change_mode.btn-primary {
-    width: 320px;
-    height: 60px;
-    font-size: 20px;
-    margin-right: 20px;
+.main-btn.btn-primary {
+    width: 20rem;
+    height: 3.75rem;
+    font-size: 1rem;
     font-weight: bold;
-    font-family: Arial,sans-serif;
-    background-color: #c06b83;
+    border-radius: 0.75rem;
+    margin-top: 1.25rem;
+    background-color: #D7C0D0;
     color: black;
-    border-radius: 12px;
-    margin-top: 20px;
     cursor: pointer;
-}
-.apply.btn-primary {
-    width: 320px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial,sans-serif;
-    background-color: #c06b83;
-    color: black;
-    border-radius: 12px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.change_mode.btn-primary:hover {
-    box-shadow: 2px 2px 11px #6C5B7B; 
 }
 
-.apply.btn-primary:hover {
-    box-shadow: 2px 2px 11px #6C5B7B; 
+@media screen and (max-width: 950px)
+{
+    h1.title {
+        font-size: 2rem;
+    }    
 }

@@ -1,62 +1,104 @@
+@import url('https://fonts.cdnfonts.com/css/renegade-pursuit');
+@import url('https://fonts.cdnfonts.com/css/utendo');
+
+* {
+  font-family: 'Utendo', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding-bottom: 50px;
-  font-weight: bold;
-  background: linear-gradient(180deg, #F8B195 0%,#F67280 100%);
+  background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
   background-attachment: fixed;
   height: 100%;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  font-weight: normal;
+  overflow-x: auto;
 }
 
 h1.title {
-  font-family: Arial, sans-serif;
-  font-size: 70px;
-  font-weight: bold;
-  color: #355C7D;
-  text-shadow: 2px 2px 5px #6C5B7B;
-  text-align: center;
-  padding-left: 20px;
-}
-
-h3.subtitle {
-  font-size: 30px;
+  font-family: 'Renegade Pursuit', sans-serif;
+  font-size: 3.5rem;
+  color: #D7C0D0;
   font-weight: bold;
   text-align: center;
-  color: #355C7D;
-}
-
-h4.subheader {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  color: #355C7D;
-}
-
-p.normal_text {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-}
-
-.back{
-  flex-basis: 0%;
-  cursor: pointer;
-}
-
-.back:hover{
-  -webkit-filter: invert(1);
-  filter: invert(1);
-}
-
-.titlebox{
-  font-size: 20px;
-  padding-right: 80px;
-  padding-left: 20px;
+  margin-left: 1rem;
 }
 
 .container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  margin: 0 0 3rem 0;
+  max-width: 70vw;
+}
+
+.container#main{
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.container#text{
+  flex-direction: column;
+}
+
+h3.subtitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  color: #D7C0D0;
+  margin-top: 1rem;
+}
+
+h4.subheader {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #F0D78C;
+}
+
+p.normal_text {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #FFFF;
+  font-weight: normal;
+}
+
+p.lead {
+  margin-top: 2rem;
+  text-align: center;
+  color: #FFFF;
+  max-width: 65%;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.back{
+  flex-basis: 0%;
+  cursor: pointer;
+  margin-top: -0.4rem;
+}
+
+.back:hover{
+  scale: 1.09;
+}
+
+.icon {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 950px)
+{  
+    h1.title {
+        font-size: 2rem;
+    }
+    
+    p.lead {
+      text-align: center;
+      color: #FFFF;
+      max-width: 85%;
+    }
 }

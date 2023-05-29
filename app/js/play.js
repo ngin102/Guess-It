@@ -41,10 +41,6 @@ get_word.open("get", "./PHP/retrieve_word.php", true);
 get_word.send();
 localStorage.setItem('win', true);
 
-
-
-
-
 // The localeCompare() method returns sort order -1, 1 or 0 (before, after or equal).
 function search(ele) {
 
@@ -72,11 +68,11 @@ function search(ele) {
       if (parseInt(string_guess) > parseInt(word_to_guess)) {
         display(content, "./icons/green_arrow.png")
       } else if (parseInt(string_guess) < parseInt(word_to_guess)) {
-        display(content, "./icons/purple_arrow.png")
+        display(content, "./icons/red_arrow.png")
       } else if (parseInt(string_guess) === parseInt(word_to_guess)){
         redirect(content, mode)
       } else { 
-        display(content, "./icons/purple_arrow.png")
+        display(content, "./icons/red_arrow.png")
       }
 
 
@@ -92,7 +88,7 @@ function search(ele) {
       else if (string_guess.localeCompare(word_to_guess) == -1) {
         console.log(string_guess)
         console.log(word_to_guess)
-        display(content, "./icons/purple_arrow.png")
+        display(content, "./icons/red_arrow.png")
 
       //We want to user a different function for regular mode when we win
       } else {
@@ -117,7 +113,6 @@ function lose(string_guess) {
   text.innerHTML = "You're clearly new at this game, you needed to guess: <a href = 'https://en.wikipedia.org/wiki/"+word_to_guess+"' target='_blank'> "+word_to_guess+"</a> ... Play again?"
   document.getElementById("modal_random").addEventListener('click', reset)
 }
-
 
 //displays the content and arrow associated with the word
 function display(content, arrow) {
@@ -149,7 +144,6 @@ function win_regular(content) {
 
   localStorage.setItem('win', false)
   localStorage.setItem('date', day_of_word)
-
 
   let leaderboard_prompt = "";
   while (leaderboard_prompt == "" || leaderboard_prompt == null) {
@@ -210,7 +204,6 @@ function redirect(content, mode) {
   }
   
 }
-
 
 //Youve already played the regular mode for the day!
 function already() {

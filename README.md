@@ -1,12 +1,11 @@
-# Guess It
+# Guess It!
 **[Click here to view a demo (video and screenshots) of our project.](#demo)**
-
-<img width="1033" alt="Screen Shot 2022-03-01 at 7 03 37 PM" src="https://user-images.githubusercontent.com/71230219/156541685-a9966e6b-eb85-4cd4-87b3-1dc20e13e99f.png">
+<img width="1033" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/43a8aa17-e754-4361-bd1a-43e3b9dd14b2">
 
 ## Introduction
-Our project is a game called “Guess It,” that is similar in scope to “Wordle” (an example shown in class).
+“Guess It!” is a game where you need to guess an English word. While you make guesses, the website will tell you whether the word is alphabetically before or after the word you guessed. “Guess It!” has multiple modes for players to choose from.
 
-“Guess It” is a game where you need to guess an English word. While you make guesses, the website will tell you whether the word is alphabetically before or after the word you guessed. “Guess It” has multiple modes for players to choose from.
+This is the repository for Version 2 of the game (this version of "Guess It!" has an updated look and layout).
 
 ### Team members
 | Team member  | Email Address       |
@@ -16,15 +15,15 @@ Our project is a game called “Guess It,” that is similar in scope to “Word
 | Marija Bolic | mboli027@uottawa.ca |
 
 ## Documentation
-* **[UI Design System](docs/ui_design_system.pdf)**: A document containing the set of standards for the colour palette, fonts, icons, buttons, UI components and form elements for "Guess It."
+* **[UI Design System](docs/ui_design_system.pdf)**: A document containing the set of standards for the colour palette, fonts, icons, buttons, UI components and form elements for "Guess It!"
 	- [Icons](app/icons): Icons used in the UI.
-* **[Installation](#installation)**: How to install "Guess It" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
+* **[Installation](#installation)**: How to install "Guess It!" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and macOS, but a Windows Subsystem for Linux is required for their use on Windows.**
 * **[How to Start Developing](#how-to-start-developing)**: Steps taken to ensure that the application runs properly in the development environment.
 * **[Deployment](#deployment)**: Deploying the project using the provided helper `./deploy.sh` script.
 * **[Upgrades](#upgrades)**: Upgrading the project using the provided helper `./upgrade.sh` script.
-* **[Testing](#testing)**: Running the project unit tests. There are two sets of unit tests: PHPUnit and JS (using Playwright). These sets of unit tests can be run independently of one another or together using the provided helper `./tests.sh` script. 
-* **[How to Play](#how-to-play)**: How to play "Guess It."
-* **[Demo](#demo)**: A demo of "Guess It," including a video demo.
+* **[Testing](#testing)**: Running the project unit tests. The unit tests can run independently or using the provided helper `./tests.sh` script. 
+* **[How to Play](#how-to-play)**: How to play "Guess It!"
+* **[Demo](#demo)**: A demo of "Guess It!" – including a video demo.
 	- **[Screenshots (of available features)](#screenshots)**: The video demo as a set of screenshots.
 
 ## Installation
@@ -35,19 +34,18 @@ This script requires [Homebrew](https://brew.sh) to prepare necessary components
 **Also note that all installation instructions and the helper script were made based on a Linux environment, as instructed in the project outline. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
 
 You will need the following technologies installed:
-* [PHP 8.1.2+](#php)
-* [PHPUnit 9.5.16+](#phpunit)
-* [Playwright 1.19.2+ (requires Node 17.6.0+)](#playwright-requires-node)
-* [Postgres 14.2+](#postgres) 
+* [PHP 8.2.6+](#php)
+* [PHPUnit 10.1.3+](#phpunit)
+* [Postgres 14.7+](#postgres) 
 
 
-The video below shows the helper `./setup.sh` script executing successfully. At the end of the video, we check that all required technologies were installed by checking the version of each technology in the terminal.
-[![Setup Script](https://img.youtube.com/vi/o4hFMYfEZEQ/0.jpg)](https://youtu.be/o4hFMYfEZEQ "Setup Script Running")
+The video below shows the helper `./setup.sh` script executing successfully (click the image to open the video). At the end of the video, we check that all required technologies were installed by checking the version of each technology in the terminal.
+[![Setup Script](https://img.youtube.com/vi/gfKfA8aALCU/0.jpg)](https://youtu.be/gfKfA8aALCU "Setup Script Running")
 
 
 ### PHP
 To run this project, you need PHP and a command line.
-The project was tested on `PHP 8.1.2`.
+The project was tested on `PHP 8.2.6`.
 
 The helper script uses the command `brew install php` to install PHP.
 
@@ -58,7 +56,7 @@ php --version
 
 The output of this command should be similar to: 
 ```
-PHP 8.1.2 (cli) (built: Jan 21 2022 04:34:05) (NTS)
+PHP 8.2.6 (cli) (built: Jan 21 2022 04:34:05) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.2, Copyright (c), by Zend Technologies
@@ -69,7 +67,7 @@ You can start the connection to the localhost using the helper `./server.sh` scr
 
 ### PHPUnit
 To run the php tests included with the project, you will also need to install [PHPUnit](https://phpunit.de).
-The PHPUnit tests were tested on `PHP 9.5.16`.
+The PHPUnit tests were tested on `PHP 10.1.3`.
 
 The helper script uses the command `brew install phpunit` to install PHPUnit.
 
@@ -80,43 +78,7 @@ phpunit --version
 
 The output of this command should be similar to: 
 ```
-PHPUnit 9.5.16 by Sebastian Bergmann and contributors.
-```
-
-### Playwright (Requires Node)
-To run the JS unit tests included with the project, you will also need to install [Playwright](https://playwright.dev/docs/intro#installation) in the project-snm\tests\playwright folder.
-
-The installation of Playwright first requires the installation of [Node.js](https://nodejs.org/en/). 
-
-The helper script uses the command `brew install node` to install Node.
-
-The JS unit tests were tested on `Node 17.6.0`.
-
-Check which version of Node you have installed on your device using the following command:
-```bash
-node -v
-```
-
-The output of this command should be similar to: 
-```
-v17.6.0
-```
-
-Playwright can then be subsequently installed in the project-snm\tests\playwright folder by changing the directory to this folder and using the commands: 
-```bash
-npm i playwright
-npm install -D @playwright/test
-```
-The JS unit tests were tested on `Playwright 1.19.2`.
-
-Check which verison of Playwright you have installed on your device using the following command:
-```bash
-npx playwright --version
-```
-
-The output of this command should be similar to: 
-```
-Version 1.19.2
+PHPUnit 10.1.3 by Sebastian Bergmann and contributors.
 ```
 
 ### Postgres
@@ -126,7 +88,7 @@ You must install the database locally.
 
 The helper script uses the command `brew install postgresql` to install Postgres.
 
-The project was tested on `PostgreSQL 14.2`
+The project was tested on `PostgreSQL 14.7 (Homebrew)`
 
 Check which version of Postgres you have installed on your device using the following command:
 ```bash
@@ -136,7 +98,7 @@ psql --version
 The output of this command should be similar to:
 
 ```bash
-psql (PostgreSQL) 14.2
+psql (PostgreSQL) 14.7 (Homebrew)
 ```
 
 #### Seeding the Postgres Database
@@ -160,7 +122,7 @@ INSERT 0 6
 INSERT 0 2777
 INSERT 0 121
 INSERT 0 166
-INSERT 0 369
+INSERT 0 377
 ```
 
 You should then be able to access the database using `psql` (use the following command):
@@ -191,11 +153,10 @@ postgres=# \dt guess_it.*
 There is also a set of [migrations](https://github.com/professor-forward/project-snm/tree/f/deliverable4/db/migrations), which track changes to our schema. Because there has not been a formal first release of our application previous to Deliverable 4, it is sufficient to use 
 ```./bin/db/create``` to add these migrations to the database.
 
-The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script.
+The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script (click the image to open the video).
 If the database is created and seeded and the server is running, you can then visit `http://localhost:4000` to see the application running. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-
-[![Create and Server Script](https://img.youtube.com/vi/d4lq2iZ0378/0.jpg)](https://youtu.be/d4lq2iZ0378 "Create and Server Script Running")
+[![Create and Server Script](https://img.youtube.com/vi/f7IIqScnFBQ/0.jpg)](https://youtu.be/f7IIqScnFBQ "Create and Server Script Running")
 
 
 ## How to Start Developing
@@ -210,7 +171,7 @@ If you are developing tests for the application, please view the [Testing Sectio
 
 The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-[![Create and Server Script](https://img.youtube.com/vi/d4lq2iZ0378/0.jpg)](https://youtu.be/d4lq2iZ0378 "Create and Server Script Running")
+[![Create and Server Script](https://img.youtube.com/vi/f7IIqScnFBQ/0.jpg)](https://youtu.be/f7IIqScnFBQ "Create and Server Script Running")
 
 ## Deployment
 **A helper `./deploy.sh` script is provided to deploy the project.**
@@ -223,10 +184,9 @@ After completing the two steps above, the script will automatically zip up the c
 
 You can then visit `http://localhost:4000` to see the application running.
 
-The video below shows how `./deploy.sh` runs. All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
+The video below shows how `./deploy.sh` runs (click the image to open the video). All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-
-[![Deploy Script](https://img.youtube.com/vi/lpdlDQssooA/0.jpg)](https://youtu.be/lpdlDQssooA "Deploy Script Running")
+[![Deploy Script](https://img.youtube.com/vi/huNU17In57k/0.jpg)](https://youtu.be/huNU17In57k "Deploy Script Running")
 
 
 ## Upgrades
@@ -242,35 +202,30 @@ After completing the two steps above, the script will automatically zip up the c
 
 You can then visit `http://localhost:4000` to see the application running.
 
-The video below shows how `./upgrade.sh` runs; we demo a change being made to the project (in the development environment) and how this change is reflected in the files in the temp folder once the script is called. All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
+The video below shows how `./upgrade.sh` runs; we demo a change being made to the project (in the development environment) and how this change is reflected in the files in the temp folder once the script is called (click the image to open the video). All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
 The video below also shows the execution of `./upgrade.sh` such that the connection to the localhost is still running when the script is executed; the terminal indicates that a new connection can not be established, but this does not impact the project files being upgraded and your ability to run the upgraded project files without restarting the connection.
 
 
-[![Upgrade Script](https://img.youtube.com/vi/9ctGmzYPMAY/0.jpg)](https://youtu.be/9ctGmzYPMAY "Upgrade Script Running")
+[![Upgrades Script](https://img.youtube.com/vi/vmy0PBGDmOU/0.jpg)](https://youtu.be/vmy0PBGDmOU "Upgrades Script Running")
 
 
 
 ## Testing
 ### Helper Script
-**A helper `./tests.sh` script is provided to run both the PHPUnit tests and JS tests (using Playwright) automatically for you. This script requires that you first initiate the server connection to the localhost from the project directory in which you are running these tests; it is recommended that you run the tests from the development environment.**
+**A helper `./tests.sh` script is provided to run the PHPUnit tests automatically for you. This script requires that you first initiate the server connection to the localhost from the project directory in which you are running these tests; it is recommended that you run the tests from the development environment.**
 
 To run the helper script:
 * Change the directory to the project-snm repository (the development environment), wherever you have it saved on your device.
-* Initiate the server on the localhost (this can be done using the `./server.sh` script).
 * Run the helper script, `./tests.sh`.
 
 The script will then check that you have all necessary components installed using `./setup.sh` before running the tests. 
 
-The results of this script should be the combined output of running both the PHPUnit tests and JS tests (using Playwright) manually, with the PHPUnit test results outputted first and then the Playwright test results outputting second (there should be eight tests in total: six PHPUnit tests and two JS tests which use Playwright). Instructions on how to run these tests individually are included below.
+The video below shows the helper script successfully running (click the image to open the video). 
 
-The video below shows the helper script successfully running. All necessary components that are needed to run the tests were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
-
-
-[![Tests Script](https://img.youtube.com/vi/F6BOB-6pHig/0.jpg)](https://youtu.be/F6BOB-6pHig "Tests Script Running")
+[![Tests Script](https://img.youtube.com/vi/eH4jihvtNMo/0.jpg)](https://youtu.be/eH4jihvtNMo "Tests Script Running")
 
 
 ### Manually Running the Tests
-#### Running the PHPUnit Tests
 You can manually run the six PHPUnit tests using [PHPUnit](https://phpunit.de). These are the tests found in the [phpUnit folder within the tests folder](tests/phpUnit).
 
 These tests can be run using the following command (after changing the directory to the project repository):
@@ -290,24 +245,8 @@ Time: 00:00.001, Memory: 22.31 MB
 OK (6 tests, 6 assertions)
 ```
 
-#### Running the JS Tests using Playwright
-You can manually run the two JS unit tests using Playwright. These are the tests found in the [playwright folder within the tests folder](tests/playwright).
-
-To manually run these tests, please follow the instructions below:
-* Change the directory to the project-snm repository (the development environment), wherever you have it saved on your device.
-* Initiate the server on the localhost (this can be done using the `./server.sh` script).
-* Change the directory again to project-snm\tests\playwright.
-* Run the following command in the terminal:
-```bash
-npx playwright test
-```
-
-The output of running the two tests should be: 
-![image](https://user-images.githubusercontent.com/60792590/156642394-c5dff3da-c3f8-4219-98e5-7608321c0441.png)
-
-
 ## How to Play
-"Guess It" is a word-guessing game in which you must guess an English word. If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up; if it comes after, a purple arrow will point down. Keep guessing until you "Guess It!"
+"Guess It!" is a word-guessing game in which you must guess an English word. If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up. If it comes after, a red arrow will point down. Keep guessing until you "Guess It!"
 
 #### Game Modes
 #### Regular Mode
@@ -330,154 +269,157 @@ If the game is too difficult for you and you need some assistance, don't worry, 
 
 
 ## Demo
-A video demo of our project **(this video has audio)**:
+A video demo of our project (**this video has audio**; click on the image to open the video):
 
-[![Demo](https://img.youtube.com/vi/dW0wHRrURuY/0.jpg)](https://youtu.be/dW0wHRrURuY "Guess It Demo")
+[![Demo](https://img.youtube.com/vi/D-zZ0QyAfnU/0.jpg)](https://youtu.be/D-zZ0QyAfnU "Guess It! Demo")
 
 ### Screenshots
 The video demo as a set of screenshots (screenshots of available features).
 
 "Index" page (the first page you view when you launch the application):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 02 14 AM" src="https://user-images.githubusercontent.com/71230219/161378135-4a3efced-3771-4b57-a4f6-3d907503566f.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/af9e0983-ff7a-4d6e-851a-d1f35f46c9be">
 
 Viewing the "How to Play" page (after clicking the Question Mark icon on the "Index" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 03 14 AM" src="https://user-images.githubusercontent.com/71230219/161378173-233c130f-b41c-40df-b0d1-3977d22d1b53.png">
+<img width="1420" alt="How to Play page" src="https://github.com/ngin102/guess-it/assets/71230219/509615cc-414d-42a9-b93f-4fef7deb8494">
 
 Returning to the "Index" page (after clicking the Back Arrow icon on the "How to Play" page) and highlighting the Regular Mode Button:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
+<img width="1420" alt="Index page (after clicking the Back Arrow icon on the How to Play page) and highlighting the Regular Mode Button" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Regular Mode" (after clicking the Regular Mode Button on the "Index" page). From this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 05 48 AM" src="https://user-images.githubusercontent.com/71230219/161378274-49333dde-ae04-488b-bc67-217117194d56.png">
+<img width="1033" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/43a8aa17-e754-4361-bd1a-43e3b9dd14b2">
 
 Viewing the "Leaderboard" page (after clicking the Trophy icon on the "Index" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 12 40 AM" src="https://user-images.githubusercontent.com/71230219/161378543-dd160e3f-4a01-431e-b7ad-232e41e0fea7.png">
+<img width="1420" alt="Leaderboard page" src="https://github.com/ngin102/guess-it/assets/71230219/ef67cb16-6692-40cf-b8e5-1c16bf855fcf">
 
-Viewing a Hint (after returning to the "Index" page by clicking on the Back Arrow icon on the "Leaderboard" page and clicking on the Lightbulb icon on the "Mainpage"):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 13 45 AM" src="https://user-images.githubusercontent.com/71230219/161378577-670bfe18-5e53-4d3f-9765-9a032ca1b685.png">
+Viewing a Hint (after returning to the "Mainpage" by clicking on the Back Arrow icon on the "Leaderboard" page and clicking on the Lightbulb icon on the "Mainpage"):
+<img width="1420" alt="Viewing a Hint on the Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/18a1b70f-2101-43d8-ae67-82e685f48542">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage"):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 18 22 AM" src="https://user-images.githubusercontent.com/71230219/161380750-154a2a00-c827-4b60-bcbd-b73c49e5bf0e.png">
+<img width="1420" alt="Settings page" src="https://github.com/ngin102/guess-it/assets/71230219/7441c540-801f-4d92-9ad2-150a6cec6b62">
 
 Returning to the "Index" page (after clicking the Change Game Mode Button on the "Settings" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/af9e0983-ff7a-4d6e-851a-d1f35f46c9be">
 
-Inputting "apple" as a guess on the "Mainpage" (after clicking the Regular Mode Button on the "Index" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 19 38 AM" src="https://user-images.githubusercontent.com/71230219/161380788-504e71c9-74af-429c-aa60-5763e77c876d.png">
+Inputting "Apple" as a guess on the "Mainpage" (after clicking the Regular Mode Button on the "Index" page):
+<img width="1420" alt="Inputting Apple as a guess" src="https://github.com/ngin102/guess-it/assets/71230219/1a78e5b9-ca0a-41eb-95ce-b3fe64164cc3">
 
-Guessing "apple;" the Purple Arrow indicates the word the player needs to guess is alphabetically after "apple" (clicking the enter Button after the steps in the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 19 58 AM" src="https://user-images.githubusercontent.com/71230219/161380801-0a52d9cd-73ea-4f06-afe2-138ced54f963.png">
+Guessing "Apple;" the Red Arrow indicates the word the player needs to guess is alphabetically after "apple" (clicking the enter Button after the steps in the previous screenshot):
+<img width="1420" alt="Red arrow appears after inputting Apple" src="https://github.com/ngin102/guess-it/assets/71230219/e5136e43-1138-483d-ad4f-837708fb176f">
 
-Inputting "zoo" as a guess on the "Mainpage:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 20 38 AM" src="https://user-images.githubusercontent.com/71230219/161380829-52692dd8-74b9-4c1a-b6de-eff516af2986.png">
+Inputting "Zoo" as a guess on the "Mainpage:"
+<img width="1420" alt="Inputting Zoo as a guess" src="https://github.com/ngin102/guess-it/assets/71230219/e937a7d4-47c5-4c57-b56c-473810cdd712">
+ 
+Guessing "Zoo;" the Green Arrow indicates the word the player needs to guess is alphabetically before "zoo" (clicking the enter Button after the steps in the previous screenshot):
+<img width="1420" alt="Green arrow appears after inputting Zoo" src="https://github.com/ngin102/guess-it/assets/71230219/baf6c1c8-b3d0-4ff8-b136-2c63831f3005">
 
-Guessing "zoo;" the Green Arrow indicates the word the player needs to guess is alphabetically before "zoo" (clicking the enter Button after the steps in the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 20 58 AM" src="https://user-images.githubusercontent.com/71230219/161380838-fa1cc05c-8e85-4810-8f11-45dc763e37c4.png">
+Inputting "Parabola" as a guess on the "Mainpage:"
+<img width="1420" alt="Inputting Parabola as a guess" src="https://github.com/ngin102/guess-it/assets/71230219/992c931a-efc0-4d32-b0de-9bde19c44116">
 
-Inputting "runny" as a guess on the "Mainpage:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 25 22 AM" src="https://user-images.githubusercontent.com/71230219/161378996-77cfa8ea-746c-4100-9a9e-0773701bbc37.png">
-
-"runny" was the correct guess. The player is prompted to enter their name for a Leaderboard entry:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 27 54 AM" src="https://user-images.githubusercontent.com/71230219/161379083-a2e5ba18-0070-43ec-b77f-253d9ab65787.png">
+"Parabola" was the correct guess. The player is prompted to enter their name for a Leaderboard entry:
+<img width="1420" alt="Leaderboard prompt" src="https://github.com/ngin102/guess-it/assets/71230219/948da8a3-418d-4369-bf2d-9ceb140ceb94">
 
 Inputting "Alan" as the player name for the Leaderboard entry:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 28 40 AM" src="https://user-images.githubusercontent.com/71230219/161379104-4781bac6-5929-4866-9230-1832f3b798d4.png">
+<img width="1420" alt="Inputting Alan for Leaderboard entry" src="https://github.com/ngin102/guess-it/assets/71230219/1c59f436-129b-4047-ad34-cf44a67a9c18">
 
-Viewing the "Winner" modal after pressing OK on the prompt from the previous screenshot. From this modal, the player can return to the "Index" by clicking on the Index Button, can view the "Leaderboard" by clicking the Leaderboard Button, and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "runny," which is underlined and blue):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 29 05 AM" src="https://user-images.githubusercontent.com/71230219/161379121-b83574c9-81a9-493a-921e-7de0593297ef.png">
+Viewing the "Winner" modal after pressing OK on the prompt from the previous screenshot. From this modal, the player can return to the "Index" by clicking on the Index Button, can view the "Leaderboard" by clicking the Leaderboard Button, and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "parabola," which is underlined and blue):
+<img width="1420" alt="Winnder modal" src="https://github.com/ngin102/guess-it/assets/71230219/adcc14c5-f5f0-40e0-91e3-df1a6ff00a09"> 
 
-Viewing the "Leaderboard" and the newly added Leaderboard entry after clicking the Leaderboard Button on the modal (from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 32 01 AM" src="https://user-images.githubusercontent.com/71230219/161379184-d8fa627c-1e1e-4eb0-ad83-f4a551e93e1b.png">
+Viewing the "Leaderboard" and the newly added Leaderboard entry after clicking the Leaderboard Button on the modal (from the previous screenshot):!
+<img width="1420" alt="Leaderboard" src="https://github.com/ngin102/guess-it/assets/71230219/c6b2be87-c6ec-4287-a46a-e1790945fea9">
 
 Returning to the "Index" page (after clicking the Back Arrow icon on the "Leaderboard" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Regular Mode" (after clicking the Regular Mode Button on the "Index" page). The player views a modal that tells them they can not play "Regular Mode" again for the day, since they have already won it. The player can return to the "Index" page by clicking on the Index Button on this modal:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 34 44 AM" src="https://user-images.githubusercontent.com/71230219/161379276-8c41f589-b26e-48ee-b473-7953f27d4ee9.png">
+<img width="1420" alt="Can not play modal" src="https://github.com/ngin102/guess-it/assets/71230219/3de45baa-3896-423c-a03a-0ea03ffd3a11">
 
 Returning to the "Index" page (after clicking the Index Button on the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Random Mode" (after clicking the Random Mode Button on the "Index" page). As in the case of playing "Regular Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Random Mode" src="https://github.com/ngin102/guess-it/assets/71230219/6c92e2a5-8bf5-4f06-918b-3ce13f7f4a25">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage"). The "Settings" page for "Random Mode" appears differently than the "Settings" page for "Regular Mode." All other pages in this mode appear the same as they do in "Regular Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 38 53 AM" src="https://user-images.githubusercontent.com/71230219/161379447-6486a2e7-d833-4a50-a0e1-e1d60958834e.png">
+<img width="1420" alt="Random Mode Settings" src="https://github.com/ngin102/guess-it/assets/71230219/db6d6c59-a77a-4a59-a4bb-466c09749188">
 
 Adding a two-minute timer to the game (selecting the Timer toggle ON and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 41 05 AM" src="https://user-images.githubusercontent.com/71230219/161379516-b04f423a-018f-49d4-9635-db9027725bcd.png">
-<img width="1143" alt="Screen Shot 2022-04-02 at 6 41 45 AM" src="https://user-images.githubusercontent.com/71230219/161379542-c45e19cd-e262-49e5-9548-063ad19b13c0.png">
+<img width="1420" alt="Timer toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/c0f490c8-6563-4271-8745-e2e20685d4ee">
+<img width="1420" alt="Random Mode with two-minute timer" src="https://github.com/ngin102/guess-it/assets/71230219/9cbfff29-1096-4ce8-86ab-e671c44415a6">
 
 Returning to the "Settings" page (after clicking the Gears icon on the "Mainpage"), removing the timer from the game, and adding 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle OFF, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 42 24 AM" src="https://user-images.githubusercontent.com/71230219/161379565-6bbb9b92-777a-4209-914f-abab03638bfd.png">
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 14 AM" src="https://user-images.githubusercontent.com/71230219/161379615-270d13a1-5c56-42c7-9e36-8abfe46fd850.png">
+<img width="1420" alt="Limited Guesses toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/22854498-41ac-4844-ad46-2f242add9894">
+<img width="1420" alt="Random Mode with limited guesses" src="https://github.com/ngin102/guess-it/assets/71230219/ed4e8865-1a57-4895-a453-984932896daa">
 
 Returning to the "Settings" page (after clicking the Gears icon on the "Mainpage"), adding both the timer from the game and 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle ON, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 51 AM" src="https://user-images.githubusercontent.com/71230219/161379639-51cde743-16c4-422f-bdf0-c3e57bc7daa4.png">
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 45 21 AM" src="https://user-images.githubusercontent.com/71230219/161379662-b560af99-1515-4394-ae5a-ce7605103b30.png">
+<img width="1420" alt="Timer and Limited Guesses toggles ON" src="https://github.com/ngin102/guess-it/assets/71230219/fabb60f0-75fc-46a6-bb60-5a04e0bfdfd9">
+<img width="1420" alt="Random Mode with Timer and Limited Guessees" src="https://github.com/ngin102/guess-it/assets/71230219/466378ae-35e6-4bc2-bbc9-aa03eaf16ca6">
 
 Returning to the "Settings" page (after clicking the Gears icon on the "Mainpage"), removing the timer from the game and the 10 limited guesses from the game (selecting the Limited Guesses toggle OFF, selecting the Timer toggle OFF, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 45 40 AM" src="https://user-images.githubusercontent.com/71230219/161379672-0c7d6aeb-24fa-4b2c-bc0e-ed5a482b9a2d.png">
+<img width="1420" alt="Limited Guesses toggle OFF, Timer toggle OFF" src="https://github.com/ngin102/guess-it/assets/71230219/718b048e-1220-4b30-a8ea-8fca02b260a7">
+<img width="1420" alt="Random Mode" src="https://github.com/ngin102/guess-it/assets/71230219/6c92e2a5-8bf5-4f06-918b-3ce13f7f4a25">
 
-Making some guesses ("zoo" and "apple" - as seen in the screenshots for "Regular Mode") and then the guess, "exchange:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 47 24 AM" src="https://user-images.githubusercontent.com/71230219/161379736-34dee764-2313-4b1d-b064-cc1dfc9ca40b.png">
+Making some guesses ("Zoo" and "Apple" - as seen in the screenshots for "Regular Mode") and then the guess, "Dad:"
+<img width="1420" alt="Random Mode guesses: Zoo, Apple, Dad" src="https://github.com/ngin102/guess-it/assets/71230219/b48b93dd-60ca-4a77-b25e-257ad7a5a8b5">
 
 Viewing the "Winner" modal (after pressing the enter Button for the player's correct guess). From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "exchange," which is underlined and blue):
 <img width="1420" alt="Screen Shot 2022-04-02 at 6 48 52 AM" src="https://user-images.githubusercontent.com/71230219/161379815-9c2f3106-0a54-42f5-9e03-b1c51a390737.png">
 
-Viewing the Wikipedia page for "exchange" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 53 47 AM" src="https://user-images.githubusercontent.com/71230219/161379993-a0ac5234-0af7-4240-ac63-426b412639ba.png">
+Viewing the Wikipedia page for "dad" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
+<img width="1420" alt="Random Mode Winner Modal" src="https://github.com/ngin102/guess-it/assets/71230219/fe3e3763-0960-4af3-b69f-43472dd8e74f">
 
 Returning to the "Index" page (after clicking the Index Button on the "Winner" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Celebrity Mode" (after clicking the Celebrity Mode Button on the "Index" page). As in the case of playing "Random Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page; all of these pages appear and function the same as they do in "Random Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Celebrity Mode" src="https://github.com/ngin102/guess-it/assets/71230219/a0ab5412-cb3d-4281-b837-e71941a8c5b2">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage") and adding 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle OFF, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 42 24 AM" src="https://user-images.githubusercontent.com/71230219/161379565-6bbb9b92-777a-4209-914f-abab03638bfd.png">
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 14 AM" src="https://user-images.githubusercontent.com/71230219/161379615-270d13a1-5c56-42c7-9e36-8abfe46fd850.png">
+<img width="1420" alt="Limited Guesses toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/22854498-41ac-4844-ad46-2f242add9894">
+<img width="1420" alt="Celebrity Mode with limited guesses" src="https://github.com/ngin102/guess-it/assets/71230219/ed4e8865-1a57-4895-a453-984932896daa">
 
 Using all of the player's 10 guesses to guess that the celebrity name that needs to be guessed is "Taylor Swift."
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 58 40 AM" src="https://user-images.githubusercontent.com/71230219/161380149-289232ee-a1f5-4956-8e8d-bc5cfb42ecff.png">
+<img width="1420" alt="Celebrity Mode guesses" src="https://github.com/ngin102/guess-it/assets/71230219/6aba8063-a90d-4ed0-b04f-f8bbb02a0a98">
 
-Since the player has used all 10 of their guesses and has failed to guess the celebrity name, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the celebrity that needed to be guessed by clicking the provided hyperlink (in this case, the celebrity, "Hugh Jackman," which is underlined and blue):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 59 20 AM" src="https://user-images.githubusercontent.com/71230219/161380166-cc862a9a-6214-4845-a54d-349b8bb70de3.png">
+Since the player has used all 10 of their guesses and has failed to guess the celebrity name, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the celebrity that needed to be guessed by clicking the provided hyperlink (in this case, the celebrity, "Stanley Kubrick," which is underlined and blue):
+<img width="1420" alt="Celebrity Mode Loser Modal" src="https://github.com/ngin102/guess-it/assets/71230219/50b9fb38-c786-4f57-aca2-de47bb72d9f3">
 
-Viewing the Wikipedia page for "Hugh Jackman" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 01 45 AM" src="https://user-images.githubusercontent.com/71230219/161380234-88b08b38-8886-4566-8d9d-0fa340ce3309.png">
+Viewing the Wikipedia page for "stanley kubrick" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
+<img width="1420" alt="Stanley Kubrik Wikipedia page" src="https://github.com/ngin102/guess-it/assets/71230219/e222c774-728d-422e-ad8b-734b1603b9e8">
 
 Returning to the "Index" page (after clicking the Index Button on the "Loser" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Education Mode" (after clicking the Education Mode Button on the "Index" page). As in the case of playing "Random Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page; all of these pages appear and function the same as they do in "Random Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Education Mode" src="https://github.com/ngin102/guess-it/assets/71230219/a0ab5412-cb3d-4281-b837-e71941a8c5b2">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage") and adding a two-minute timer to the game (selecting the Timer toggle ON and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 41 05 AM" src="https://user-images.githubusercontent.com/71230219/161379516-b04f423a-018f-49d4-9635-db9027725bcd.png">
+<img width="1420" alt="Timer toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/c0f490c8-6563-4271-8745-e2e20685d4ee">
+<img width="1420" alt="Random Mode with two-minute timer" src="https://github.com/ngin102/guess-it/assets/71230219/9cbfff29-1096-4ce8-86ab-e671c44415a6">
 
 Failing to guess the word within the two minutes given by the timer; in the screenshot, the timer has exceeded:
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 06 05 AM" src="https://user-images.githubusercontent.com/71230219/161380379-563fcbc3-bc15-4336-a363-5bcd44363610.png">
+<img width="1420" alt="Educational Mode, Timer exceeded" src="https://github.com/ngin102/guess-it/assets/71230219/f28a84a3-8138-4e5b-bc10-152d7f460549">
 
-Since the player has failed to guess the celebrity name within the two-minute limit, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "artifact," which is underlined and blue):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 08 44 AM" src="https://user-images.githubusercontent.com/71230219/161380458-b7f730ea-57ab-44bd-806d-7b3699e3df2e.png">
+Since the player has failed to guess the educational word within the two-minute limit, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "chlorine," which is underlined and blue):
+<img width="1420" alt="Educational Mode Loser Modal" src="https://github.com/ngin102/guess-it/assets/71230219/83722eda-8f8e-4b60-8095-0fc0e2beabad">
 
-Viewing the Wikipedia page for "artifact" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 10 01 AM" src="https://user-images.githubusercontent.com/71230219/161380495-8b32ac85-f6bd-4fd7-9816-d8d68aeaca7b.png">
+Viewing the Wikipedia page for "chlorine" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
+<img width="1420" alt="Chlorine Wikipedia page" src="https://github.com/ngin102/guess-it/assets/71230219/01a62755-8fdd-488a-b983-bf3ce9ec8555">
 
 Returning to the "Index" page (after clicking the Index Button on the "Loser" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Number Mode" (after clicking the Number Mode Button on the "Index" page). As in the case of playing "Random Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page; all of these pages appear and function the same as they do in "Random Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage") and adding both the timer from the game and 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle ON, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 51 AM" src="https://user-images.githubusercontent.com/71230219/161379639-51cde743-16c4-422f-bdf0-c3e57bc7daa4.png">
+<img width="1420" alt="Timer and Limited Guesses toggles ON" src="https://github.com/ngin102/guess-it/assets/71230219/fabb60f0-75fc-46a6-bb60-5a04e0bfdfd9">
+<img width="1420" alt="Random Mode with Timer and Limited Guessees" src="https://github.com/ngin102/guess-it/assets/71230219/466378ae-35e6-4bc2-bbc9-aa03eaf16ca6">
 
-Making some guesses ("10," "200" and "999999999") and then the guess, "84660919:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 12 29 AM" src="https://user-images.githubusercontent.com/71230219/161380581-92e5ce9b-d3b3-4beb-9469-7012357d635f.png">
+Making some guesses ("10," "200" and "999999999999999") and then the guess, "54632907:"
+<img width="1420" alt="Number Mode guesses" src="https://github.com/ngin102/guess-it/assets/71230219/92c7b520-f2aa-439f-b8b3-a874ff285506">
 
 Viewing the "Winner" modal (after pressing the enter Button for the player's correct guess). From this modal, the player can return to the "Index" by clicking on the Index Button:
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 14 57 AM" src="https://user-images.githubusercontent.com/71230219/161380641-842ee30b-f5b3-43e6-9ea1-3311dab91808.png">
+<img width="1420" alt="Number Mode Winner Modal" src="https://github.com/ngin102/guess-it/assets/71230219/69c4542a-4a63-4dd5-83c2-e14b0dbf7b49">
 
 Returning to the "Index" page (after clicking the Index Button on the "Winner" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
