@@ -216,7 +216,6 @@ The video below also shows the execution of `./upgrade.sh` such that the connect
 
 To run the helper script:
 * Change the directory to the project-snm repository (the development environment), wherever you have it saved on your device.
-* Initiate the server on the localhost (this can be done using the `./server.sh` script).
 * Run the helper script, `./tests.sh`.
 
 The script will then check that you have all necessary components installed using `./setup.sh` before running the tests. 
