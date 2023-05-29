@@ -1,6 +1,6 @@
 # Guess It!
 **[Click here to view a demo (video and screenshots) of the game.](#demo)**
-<img width="1033" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/43a8aa17-e754-4361-bd1a-43e3b9dd14b2">
+<img width="1420" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/0ece5f96-7ea5-403e-a17e-e965ad7dcd28">
 
 ## Introduction
 “Guess It!” is a game where you need to guess an English word. While you make guesses, the website will tell you whether the word is alphabetically before or after the word you guessed. “Guess It!” has multiple modes for players to choose from.
