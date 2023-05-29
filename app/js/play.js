@@ -72,11 +72,11 @@ function search(ele) {
       if (parseInt(string_guess) > parseInt(word_to_guess)) {
         display(content, "./icons/green_arrow.png")
       } else if (parseInt(string_guess) < parseInt(word_to_guess)) {
-        display(content, "./icons/purple_arrow.png")
+        display(content, "./icons/red_arrow.png")
       } else if (parseInt(string_guess) === parseInt(word_to_guess)){
         redirect(content, mode)
       } else { 
-        display(content, "./icons/purple_arrow.png")
+        display(content, "./icons/red_arrow.png")
       }
 
 
@@ -92,7 +92,7 @@ function search(ele) {
       else if (string_guess.localeCompare(word_to_guess) == -1) {
         console.log(string_guess)
         console.log(word_to_guess)
-        display(content, "./icons/purple_arrow.png")
+        display(content, "./icons/red_arrow.png")
 
       //We want to user a different function for regular mode when we win
       } else {

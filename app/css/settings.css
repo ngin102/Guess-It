@@ -5,7 +5,13 @@
     font-family: 'Utendo', sans-serif;
 }
 
-  
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
     background-attachment: fixed;
@@ -14,15 +20,16 @@ body {
 
 h1.title {
     font-family: 'Renegade Pursuit', sans-serif;
-    font-size: 4.375rem;
-    color: #F0D78C;
+    font-size: 3.5rem;;
+    color: #D7C0D0;
     font-weight: bold;
     text-align: center;
+    margin-left: 1rem;
 }
 
 p.selected_setting {
-    font-size: xx-large;
-    color: #FFFF;
+    font-size: 1.8rem;
+    color: #F0D78C;
     font-weight: bold;
 }
 
@@ -40,24 +47,17 @@ p.selected_setting {
 
 .container#btns-container{
     flex-direction: column;
-    margin-top: -1.2rem;
+    margin-top: -1.6rem;
 }
 
 .back{
     flex-basis: 0%;
     cursor: pointer;
-    padding-left: 20px;
+    margin-top: -0.4rem;
 }
 
 .back:hover{
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-
-.titlebox{
-    font-size: 20px;
-    padding-right: 80px;
-    padding-left: 20px;
+    scale: 1.09;
 }
 
 table.settings_table {
@@ -88,10 +88,10 @@ table.settings_table td {
 .toggle {
     position: relative ;
     display: inline-block;
-    width: 80px;
-    height: 27px;
+    width: 5rem;
+    height: 1.6875rem;
+    border-radius: 1.25rem;
     background-color: black;
-    border-radius: 20px;
     margin-top: -5rem;
 }
 
@@ -107,33 +107,29 @@ table.settings_table td {
     cursor: pointer;
     position: absolute;
     background-color: #FFFF;
-    top: 1px;
-    left: 1px;
-    height: 25px;
-    width: 25px;
+    top: 0.0625rem;
+    left: 0.0625rem;
+    height: 1.5625rem;
+    width: 1.5625rem;
     border-radius: 50%;
 }
         
 /* Move checkmark once toggle is selected */
 .toggle input:checked + .checkmark  {
-    left: 54px;
-    background-color: #77BA99
+    left: 3.375rem;
+    background-color: #295DCF;
 }
 
 .main-btn.btn-primary {
-    width: 320px;
-    height: 60px;
-    font-size: 20px;
+    width: 20rem;
+    height: 3.75rem;
+    font-size: 1rem;
     font-weight: bold;
+    border-radius: 12px;
+    margin-top: 1.25rem;
     background-color: #D7C0D0;
     color: black;
-    border-radius: 12px;
-    margin-top: 20px;
     cursor: pointer;
-}
-
-.main-btn.btn-primary:hover {
-    box-shadow: 2px 2px 11px #6C5B7B; 
 }
 
 @media screen and (max-width: 800px)

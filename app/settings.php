@@ -14,7 +14,7 @@
               <img onclick = "history.back()" src="./icons/back.png" width = "50" height = "50" id = "back_settings" > </a>
             </div>
     
-            <div class = "titlebox"> <h1 class = "title">SETTINGS</h1> </div>
+            <div> <h1 class = "title">SETTINGS</h1> </div>
         </div>
 
         <!-- Setting selection table -->
@@ -43,8 +43,8 @@
         <!-- Code to change mode (redirects to main page) -->
         <div class = "container" id = "btns-container">
             <!-- The button to redirect to the main page -->
-            <a href = "index.php"> <button id = "change_mode_btn" class = "main-btn btn-primary btn-lg">Change Game Mode</button></a>
             <a href = "mainpage.php"> <button id = "apply" class = "main-btn btn-primary btn-lg">Apply Changes</button></a>
+            <a href = "index.php"> <button id = "change_mode_btn" class = "main-btn btn-primary btn-lg">Change Game Mode</button></a>
         </div>
 
         <script src = "./js/main.js" type = "module"></script>

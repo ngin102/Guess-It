@@ -5,6 +5,12 @@
   font-family: 'Utendo', sans-serif;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
   background-attachment: fixed;
@@ -15,60 +21,64 @@ body {
 
 h1.title {
   font-family: 'Renegade Pursuit', sans-serif;
-  font-size: 4.375rem;
-  color: #F0D78C;
+  font-size: 3.5rem;
+  color: #D7C0D0;
   font-weight: bold;
   text-align: center;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .container#main{
   margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 h3.subtitle {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   text-align: center;
   color: #D7C0D0;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 h4.subheader {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
-  color: #D7C0D0;
+  color: #F0D78C;
 }
 
 p.normal_text {
-  font-size: 16px;
+  font-size: 1.1rem;
   text-align: center;
   color: #FFFF;
+  font-weight: normal;
 }
 
 p.lead {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
   color: #FFFF;
   max-width: 65%;
+  font-size: 1.3rem;
+  font-weight: normal;
 }
 
 .back{
   flex-basis: 0%;
   cursor: pointer;
+  margin-top: -0.4rem;
 }
 
 .back:hover{
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  scale: 1.09;
 }
 
 .container{
   display: flex;
   align-items: center;
   justify-content: center; 
-  margin: 0 auto;
+  margin: 0 0 3rem 0;
   max-width: 70vw;
 }
 
@@ -76,14 +86,17 @@ p.lead {
   flex-direction: column;
 }
 
+.icon {
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 950px)
-{
+{  
     h1.title {
         font-size: 2rem;
     }
     
     p.lead {
-      margin-top: 1rem;
       text-align: center;
       color: #FFFF;
       max-width: 85%;

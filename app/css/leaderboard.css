@@ -5,57 +5,70 @@
     font-family: 'Utendo', sans-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
     background-attachment: fixed;
     height: 100%;
-    color: #D7C0D0;
     font-weight: normal;
     overflow-x: auto;
 }
 
 h1.title {
     font-family: 'Renegade Pursuit', sans-serif;
-    font-size: 4.375rem;
-    color: #F0D78C;
+    font-size: 3.5rem;
+    color: #D7C0D0;
     font-weight: bold;
     text-align: center;
+    margin-left: 1rem;
 }
 
 .container#main{
     margin-top: 3rem;
 }
 
-.titlebox{
-    font-size: 20px;
-}
-
 p.date {
-    color: #D7C0D0;
+    color: #FFFF;
     font-weight: bold;
 }
 
 table.leaderboard_table {
+    width: 70%;
     border-collapse: collapse;
-    width: 76%;
     margin-left: auto;
     margin-right: auto;
 }
 
-table.leaderboard_table th, td {  
-    border: 1px solid white;
-    padding: 15px;
-    color: black;
-}
-
-table.leaderboard_table th {
-    background-color: #6C5B7B;
-    color: white;
+table.leaderboard_table th, table.leaderboard_table td {
+    padding: 0.9375rem;
     text-align: center;
 }
 
+table.leaderboard_table td {
+    width: 50%;
+}
+
+table.leaderboard_table th {
+    background-color: #F0D78C;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+}
+
+table.leaderboard_table tr {
+    background-color: #FFFF;
+    color: #000000;
+}
+
 table.leaderboard_table tr:hover {
-    background-color: #F8B195;
+    background-color: #295DCF;
+    color: #FFFF;
+    font-weight: bold;
 }
 
 .centered {
@@ -70,20 +83,14 @@ table.leaderboard_table tr:hover {
     max-width: 70vw;
 }
 
-.titlebox{
-    font-size: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
 .back{
     flex-basis: 0%;
     cursor: pointer;
+    margin-top: -0.4rem;
 }
 
 .back:hover{
-    -webkit-filter: invert(1);
-    filter: invert(1);
+    scale: 1.09;
 }
 
 @media screen and (max-width: 800px)

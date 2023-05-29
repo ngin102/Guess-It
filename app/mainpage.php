@@ -11,31 +11,11 @@
         <link rel = "stylesheet" href = "./CSS/mainpage.css"/>
     </head>
 
-    <body>
-        <div class ="container" id = main>
-            <div class = "back">
-              <a href = "index.php"><img src="./icons/back.png" width = "50" height = "50" id = "back_settings"> </a> </div>
-              
-            <div class="hintset">
-             <button type="button" class = "hintbtn" style="border:transparent; background-color: transparent;"><img src = "./icons/hint.png" width = "50" height = "50" id = "toastbtn" /></button>
-
-                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header">
-                            <strong class="me-auto">Hint</strong>
-                        
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                        </div>
-                        <div class="toast-body" id = "hint">
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="imageset">
-                <a href = "settings.php">
-                <img src="./icons/settings.png" width = "55" height = "55" id = "settings" > 
+    <body>              
+        <div class ="container" id = "main">
+ 
+            <div class = "back" id = "main">
+                <a href = "index.php"><img src="./icons/back.png" width = "50" height = "50" id = "back_settings"> </a> 
             </div>
 
             <div class="imagequestion">
@@ -43,13 +23,16 @@
                 <img src="./icons/question.png" width = "50" height = "50" id = "questions" > </a>
             </div>
 
+            <h1 class ="title">GUESS IT</h1>
+
             <div class="lbordimage">
                 <a href = "leaderboard.php">
                 <img src="./icons/leaderboard.png" width = "50" height = "50" id = "leaderboard" > </a>
             </div>
-        
-            <div class="titlebox">
-                <h1 class ="title">GUESS IT</h1>
+
+            <div class="imageset">
+                <a href = "settings.php">
+                <img src="./icons/settings.png" width = "55" height = "55" id = "settings"> </a> 
             </div>
 
             </div>
@@ -83,7 +66,27 @@
                 </div>
                 </div>
             </div>
+        </div>
+
+        <div class = "container">
+            <div class="hintset">
+                    <button type="button" class = "hintbtn" style="border:transparent; background-color: transparent;"><img src = "./icons/hint.png" width = "50" height = "50" id = "toastbtn" /></button>
+
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Hint</strong>
+                            
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body" id = "hint">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
         <div class = "container">
             <div class = "outside" id = "arrow_area">

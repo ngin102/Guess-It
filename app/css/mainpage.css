@@ -5,11 +5,17 @@
     font-family: 'Utendo', sans-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
     background-attachment: fixed;
     height: 100%;
-    color: #D7C0D0;
+    color: #FFFF;
     font-weight: normal;
     overflow-x: auto;
 }
@@ -20,6 +26,8 @@ h1.title {
     color: #F0D78C;
     font-weight: bold;
     text-align: center;
+    margin-left: 0.4rem;
+    margin-right: -0.15rem;
 }
 
 .container{
@@ -31,71 +39,29 @@ h1.title {
 }
 
 .container#main{
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
-.imageset{
+.back, .imagequestion, .lbordimage, .imageset, .hintbtn{
     flex-basis: 0%;
-    order: 2;
-    padding-left: 3px;
-    margin-right: 80px;
     cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.12rem;
 }
 
-.imageset:hover{
-    -webkit-filter: invert(1);
-   filter: invert(1);
+.imageset {
+    margin-left: 0.;
 }
 
+.back:hover, .imagequestion:hover, .lbordimage:hover, .imageset:hover, .hintbtn:hover{
+    scale: 1.09;
+}
 
 .hintset{
+    margin-top: 1.6rem;
     flex-basis: 0%;
-    order: 2;
-    padding-right: 7px;
-    cursor: pointer;
 }
 
-.hintbtn:hover{
-    -webkit-filter: invert(1);
-   filter: invert(1);
-}
-
-.imagequestion{
-    flex-basis: 0%;
-    cursor: pointer;
-}
-
-.imagequestion:hover{
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-
-.lbordimage{
-    flex-basis: 0%;
-    cursor: pointer;
-    padding-left: 7px;
-}
-
-.lbordimage:hover{
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-.back{
-    flex-basis: 0%;
-    cursor: pointer;
-    padding-right: 2.5rem;
-}
-
-.back:hover{
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-
-.titlebox{
-    font-size: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
 .input_guess{
     padding-top: 50px;
     margin: 0 auto;
@@ -109,28 +75,26 @@ h1.title {
 }  
 
 input[type=text], select, textarea {
-    background-color:transparent; 
+    background-color: transparent; 
     outline: 0;
     border-width: 0 0 3px;
     border-color: black;
     text-align: center;
-    height: 100px;
+    height: 6.25rem;
     width: 100%;
     font-size: 3rem;
     box-sizing: border-box;
     resize: horizontal;
-    margin-top: auto;
-    margin-bottom: auto;
     color: #FFFF;
+    font-weight: normal;
 }
 
 .timer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-family: Arial, sans-serif;
     color: #D7C0D0;
     margin: 1rem auto;
 }
@@ -142,21 +106,31 @@ p#tries{
     margin: -1rem auto;
 }
 
+.toast-header {
+    color: #295DCF;
+    background-color: #D7C0D0;
+}
+
 .toast-body {
-    color: rgb(0, 0, 0); 
+    color: #295DCF; 
+}
+
+.btn-secondary {
+    background-color: #D7C0D0;
+    color: #000000; 
 }
 
 #arrow_area{
     font-size: 30px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    padding-left: 20px;
+    font-weight: normal;
+    margin-top: -1.52rem;
+    margin-bottom: 4rem;
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 900px)
 {
     h1.title {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }    
 }
 

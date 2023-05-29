@@ -22,7 +22,7 @@
         <p class = "lead">
           "Guess It" is a word-guessing game in which you must guess an English word. 
           If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up.
-          If it comes after, a purple arrow will point down.
+          If it comes after, a red arrow will point down.
           Keep guessing until you "Guess It!"</p>
           
         <h3 class = "subtitle">Game Modes</h3>
@@ -43,8 +43,8 @@
         <p class = "normal_text">Similar to Random Mode, but instead of guessing a word, you guess a number.</p>
 
         <h3 class = "subtitle">Hint</h3>
-        <p class = "normal_text">If the game is too difficult for you and you need some assistance, don't worry, you can get a hint!<br>Hints are available for all Game Modes.</p>
-
+        <img class = "icon " src = "./icons/hint.png" width = "50" height = "50"/>
+        <p class = "normal_text">If the game is too difficult for you and you need some assistance,<br> don't worry, you can get a hint by clicking on this icon!<br>Hints are available for all Game Modes.</p>
         <br>
       </div>
   </body>
