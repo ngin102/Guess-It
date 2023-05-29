@@ -1,5 +1,5 @@
 # Guess It!
-**[Click here to view a demo (video and screenshots) of our project.](#demo)**
+**[Click here to view a demo (video and screenshots) of the game.](#demo)**
 <img width="1033" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/43a8aa17-e754-4361-bd1a-43e3b9dd14b2">
 
 ## Introduction
@@ -40,6 +40,7 @@ You will need the following technologies installed:
 
 
 The video below shows the helper `./setup.sh` script executing successfully (click the image to open the video). At the end of the video, we check that all required technologies were installed by checking the version of each technology in the terminal.
+
 [![Setup Script](https://img.youtube.com/vi/gfKfA8aALCU/0.jpg)](https://youtu.be/gfKfA8aALCU "Setup Script Running")
 
 

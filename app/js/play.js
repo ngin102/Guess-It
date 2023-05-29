@@ -19,7 +19,6 @@ let get_word = new XMLHttpRequest();
 
 /*Different gamemodes based on mode selection*/
 get_word.onload = function () {
-  let wordArray = JSON.parse(get_word.responseText)
   if (mode === "mode2") {
     word_to_guess = wordArray[1];
   } else if (mode === "mode3") {
