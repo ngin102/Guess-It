@@ -42,7 +42,7 @@ h1.title {
 }
 
 p.date {
-    color: #FFFF;
+    color: #FFFFFF;
     text-align: center;
     font-weight: bold;
 }
@@ -71,13 +71,13 @@ table.leaderboard_table th {
 }
 
 table.leaderboard_table tr {
-    background-color: #FFFF;
+    background-color: #FFFFFF;
     color: #000000;
 }
 
 table.leaderboard_table tr:hover {
     background-color: #295DCF;
-    color: #FFFF;
+    color: #FFFFFF;
     font-weight: bold;
 }
 

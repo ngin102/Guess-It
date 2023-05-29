@@ -63,14 +63,14 @@ h4.subheader {
 p.normal_text {
   font-size: 1.1rem;
   text-align: center;
-  color: #FFFF;
+  color: #FFFFFF;
   font-weight: normal;
 }
 
 p.lead {
   margin-top: 2rem;
   text-align: center;
-  color: #FFFF;
+  color: #FFFFFF;
   max-width: 65%;
   font-size: 1.3rem;
   font-weight: normal;
@@ -98,7 +98,7 @@ p.lead {
     
     p.lead {
       text-align: center;
-      color: #FFFF;
+      color: #FFFFFF;
       max-width: 85%;
     }
 }
