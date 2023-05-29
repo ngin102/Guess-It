@@ -327,97 +327,101 @@ Viewing the "Winner" modal after pressing OK on the prompt from the previous scr
 <img width="1420" alt="Winnder modal" src="https://github.com/ngin102/guess-it/assets/71230219/adcc14c5-f5f0-40e0-91e3-df1a6ff00a09"> 
 
 Viewing the "Leaderboard" and the newly added Leaderboard entry after clicking the Leaderboard Button on the modal (from the previous screenshot):!
+<img width="1420" alt="Leaderboard" src="https://github.com/ngin102/guess-it/assets/71230219/c6b2be87-c6ec-4287-a46a-e1790945fea9">
 
 Returning to the "Index" page (after clicking the Back Arrow icon on the "Leaderboard" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Regular Mode" (after clicking the Regular Mode Button on the "Index" page). The player views a modal that tells them they can not play "Regular Mode" again for the day, since they have already won it. The player can return to the "Index" page by clicking on the Index Button on this modal:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 34 44 AM" src="https://user-images.githubusercontent.com/71230219/161379276-8c41f589-b26e-48ee-b473-7953f27d4ee9.png">
+<img width="1420" alt="Can not play modal" src="https://github.com/ngin102/guess-it/assets/71230219/3de45baa-3896-423c-a03a-0ea03ffd3a11">
 
 Returning to the "Index" page (after clicking the Index Button on the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Random Mode" (after clicking the Random Mode Button on the "Index" page). As in the case of playing "Regular Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Random Mode" src="https://github.com/ngin102/guess-it/assets/71230219/6c92e2a5-8bf5-4f06-918b-3ce13f7f4a25">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage"). The "Settings" page for "Random Mode" appears differently than the "Settings" page for "Regular Mode." All other pages in this mode appear the same as they do in "Regular Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 38 53 AM" src="https://user-images.githubusercontent.com/71230219/161379447-6486a2e7-d833-4a50-a0e1-e1d60958834e.png">
+<img width="1420" alt="Random Mode Settings" src="https://github.com/ngin102/guess-it/assets/71230219/db6d6c59-a77a-4a59-a4bb-466c09749188">
 
 Adding a two-minute timer to the game (selecting the Timer toggle ON and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 41 05 AM" src="https://user-images.githubusercontent.com/71230219/161379516-b04f423a-018f-49d4-9635-db9027725bcd.png">
-<img width="1143" alt="Screen Shot 2022-04-02 at 6 41 45 AM" src="https://user-images.githubusercontent.com/71230219/161379542-c45e19cd-e262-49e5-9548-063ad19b13c0.png">
+<img width="1420" alt="Timer toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/c0f490c8-6563-4271-8745-e2e20685d4ee">
+<img width="1420" alt="Random Mode with two-minute timer" src="https://github.com/ngin102/guess-it/assets/71230219/9cbfff29-1096-4ce8-86ab-e671c44415a6">
 
 Returning to the "Settings" page (after clicking the Gears icon on the "Mainpage"), removing the timer from the game, and adding 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle OFF, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 42 24 AM" src="https://user-images.githubusercontent.com/71230219/161379565-6bbb9b92-777a-4209-914f-abab03638bfd.png">
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 14 AM" src="https://user-images.githubusercontent.com/71230219/161379615-270d13a1-5c56-42c7-9e36-8abfe46fd850.png">
+<img width="1420" alt="Limited Guesses toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/22854498-41ac-4844-ad46-2f242add9894">
+<img width="1420" alt="Random Mode with limited guesses" src="https://github.com/ngin102/guess-it/assets/71230219/ed4e8865-1a57-4895-a453-984932896daa">
 
 Returning to the "Settings" page (after clicking the Gears icon on the "Mainpage"), adding both the timer from the game and 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle ON, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 51 AM" src="https://user-images.githubusercontent.com/71230219/161379639-51cde743-16c4-422f-bdf0-c3e57bc7daa4.png">
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 45 21 AM" src="https://user-images.githubusercontent.com/71230219/161379662-b560af99-1515-4394-ae5a-ce7605103b30.png">
+<img width="1420" alt="Timer and Limited Guesses toggles ON" src="https://github.com/ngin102/guess-it/assets/71230219/fabb60f0-75fc-46a6-bb60-5a04e0bfdfd9">
+<img width="1420" alt="Random Mode with Timer and Limited Guessees" src="https://github.com/ngin102/guess-it/assets/71230219/466378ae-35e6-4bc2-bbc9-aa03eaf16ca6">
 
 Returning to the "Settings" page (after clicking the Gears icon on the "Mainpage"), removing the timer from the game and the 10 limited guesses from the game (selecting the Limited Guesses toggle OFF, selecting the Timer toggle OFF, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 45 40 AM" src="https://user-images.githubusercontent.com/71230219/161379672-0c7d6aeb-24fa-4b2c-bc0e-ed5a482b9a2d.png">
+<img width="1420" alt="Limited Guesses toggle OFF, Timer toggle OFF" src="https://github.com/ngin102/guess-it/assets/71230219/718b048e-1220-4b30-a8ea-8fca02b260a7">
+<img width="1420" alt="Random Mode" src="https://github.com/ngin102/guess-it/assets/71230219/6c92e2a5-8bf5-4f06-918b-3ce13f7f4a25">
 
-Making some guesses ("zoo" and "apple" - as seen in the screenshots for "Regular Mode") and then the guess, "exchange:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 47 24 AM" src="https://user-images.githubusercontent.com/71230219/161379736-34dee764-2313-4b1d-b064-cc1dfc9ca40b.png">
+Making some guesses ("Zoo" and "Apple" - as seen in the screenshots for "Regular Mode") and then the guess, "Dad:"
+<img width="1420" alt="Random Mode guesses: Zoo, Apple, Dad" src="https://github.com/ngin102/guess-it/assets/71230219/b48b93dd-60ca-4a77-b25e-257ad7a5a8b5">
 
 Viewing the "Winner" modal (after pressing the enter Button for the player's correct guess). From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "exchange," which is underlined and blue):
 <img width="1420" alt="Screen Shot 2022-04-02 at 6 48 52 AM" src="https://user-images.githubusercontent.com/71230219/161379815-9c2f3106-0a54-42f5-9e03-b1c51a390737.png">
 
-Viewing the Wikipedia page for "exchange" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 53 47 AM" src="https://user-images.githubusercontent.com/71230219/161379993-a0ac5234-0af7-4240-ac63-426b412639ba.png">
+Viewing the Wikipedia page for "dad" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
+<img width="1420" alt="Random Mode Winner Modal" src="https://github.com/ngin102/guess-it/assets/71230219/fe3e3763-0960-4af3-b69f-43472dd8e74f">
 
 Returning to the "Index" page (after clicking the Index Button on the "Winner" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Celebrity Mode" (after clicking the Celebrity Mode Button on the "Index" page). As in the case of playing "Random Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page; all of these pages appear and function the same as they do in "Random Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Celebrity Mode" src="https://github.com/ngin102/guess-it/assets/71230219/a0ab5412-cb3d-4281-b837-e71941a8c5b2">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage") and adding 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle OFF, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 42 24 AM" src="https://user-images.githubusercontent.com/71230219/161379565-6bbb9b92-777a-4209-914f-abab03638bfd.png">
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 14 AM" src="https://user-images.githubusercontent.com/71230219/161379615-270d13a1-5c56-42c7-9e36-8abfe46fd850.png">
+<img width="1420" alt="Limited Guesses toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/22854498-41ac-4844-ad46-2f242add9894">
+<img width="1420" alt="Celebrity Mode with limited guesses" src="https://github.com/ngin102/guess-it/assets/71230219/ed4e8865-1a57-4895-a453-984932896daa">
 
 Using all of the player's 10 guesses to guess that the celebrity name that needs to be guessed is "Taylor Swift."
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 58 40 AM" src="https://user-images.githubusercontent.com/71230219/161380149-289232ee-a1f5-4956-8e8d-bc5cfb42ecff.png">
+<img width="1420" alt="Celebrity Mode guesses" src="https://github.com/ngin102/guess-it/assets/71230219/6aba8063-a90d-4ed0-b04f-f8bbb02a0a98">
 
-Since the player has used all 10 of their guesses and has failed to guess the celebrity name, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the celebrity that needed to be guessed by clicking the provided hyperlink (in this case, the celebrity, "Hugh Jackman," which is underlined and blue):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 59 20 AM" src="https://user-images.githubusercontent.com/71230219/161380166-cc862a9a-6214-4845-a54d-349b8bb70de3.png">
+Since the player has used all 10 of their guesses and has failed to guess the celebrity name, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the celebrity that needed to be guessed by clicking the provided hyperlink (in this case, the celebrity, "Stanley Kubrick," which is underlined and blue):
+<img width="1420" alt="Celebrity Mode Loser Modal" src="https://github.com/ngin102/guess-it/assets/71230219/50b9fb38-c786-4f57-aca2-de47bb72d9f3">
 
-Viewing the Wikipedia page for "Hugh Jackman" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 01 45 AM" src="https://user-images.githubusercontent.com/71230219/161380234-88b08b38-8886-4566-8d9d-0fa340ce3309.png">
+Viewing the Wikipedia page for "stanley kubrick" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
+<img width="1420" alt="Stanley Kubrik Wikipedia page" src="https://github.com/ngin102/guess-it/assets/71230219/e222c774-728d-422e-ad8b-734b1603b9e8">
 
 Returning to the "Index" page (after clicking the Index Button on the "Loser" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Education Mode" (after clicking the Education Mode Button on the "Index" page). As in the case of playing "Random Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page; all of these pages appear and function the same as they do in "Random Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Education Mode" src="https://github.com/ngin102/guess-it/assets/71230219/a0ab5412-cb3d-4281-b837-e71941a8c5b2">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage") and adding a two-minute timer to the game (selecting the Timer toggle ON and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 41 05 AM" src="https://user-images.githubusercontent.com/71230219/161379516-b04f423a-018f-49d4-9635-db9027725bcd.png">
+<img width="1420" alt="Timer toggle ON" src="https://github.com/ngin102/guess-it/assets/71230219/c0f490c8-6563-4271-8745-e2e20685d4ee">
+<img width="1420" alt="Random Mode with two-minute timer" src="https://github.com/ngin102/guess-it/assets/71230219/9cbfff29-1096-4ce8-86ab-e671c44415a6">
 
 Failing to guess the word within the two minutes given by the timer; in the screenshot, the timer has exceeded:
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 06 05 AM" src="https://user-images.githubusercontent.com/71230219/161380379-563fcbc3-bc15-4336-a363-5bcd44363610.png">
+<img width="1420" alt="Educational Mode, Timer exceeded" src="https://github.com/ngin102/guess-it/assets/71230219/f28a84a3-8138-4e5b-bc10-152d7f460549">
 
-Since the player has failed to guess the celebrity name within the two-minute limit, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "artifact," which is underlined and blue):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 08 44 AM" src="https://user-images.githubusercontent.com/71230219/161380458-b7f730ea-57ab-44bd-806d-7b3699e3df2e.png">
+Since the player has failed to guess the educational word within the two-minute limit, the "Loser" modal appears. From this modal, the player can return to the "Index" by clicking on the Index Button and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "chlorine," which is underlined and blue):
+<img width="1420" alt="Educational Mode Loser Modal" src="https://github.com/ngin102/guess-it/assets/71230219/83722eda-8f8e-4b60-8095-0fc0e2beabad">
 
-Viewing the Wikipedia page for "artifact" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 10 01 AM" src="https://user-images.githubusercontent.com/71230219/161380495-8b32ac85-f6bd-4fd7-9816-d8d68aeaca7b.png">
+Viewing the Wikipedia page for "chlorine" in a new tab (after clicking the hyperlink in the modal from the previous screenshot):
+<img width="1420" alt="Chlorine Wikipedia page" src="https://github.com/ngin102/guess-it/assets/71230219/01a62755-8fdd-488a-b983-bf3ce9ec8555">
 
 Returning to the "Index" page (after clicking the Index Button on the "Loser" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Number Mode" (after clicking the Number Mode Button on the "Index" page). As in the case of playing "Random Mode," from this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page; all of these pages appear and function the same as they do in "Random Mode:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 37 46 AM" src="https://user-images.githubusercontent.com/71230219/161379394-a96cd805-502f-4436-8de9-d8640402090d.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage") and adding both the timer from the game and 10 limited guesses to the game (selecting the Limited Guesses toggle ON, selecting the Timer toggle ON, and then clicking the Apply Button):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 44 51 AM" src="https://user-images.githubusercontent.com/71230219/161379639-51cde743-16c4-422f-bdf0-c3e57bc7daa4.png">
+<img width="1420" alt="Timer and Limited Guesses toggles ON" src="https://github.com/ngin102/guess-it/assets/71230219/fabb60f0-75fc-46a6-bb60-5a04e0bfdfd9">
+<img width="1420" alt="Random Mode with Timer and Limited Guessees" src="https://github.com/ngin102/guess-it/assets/71230219/466378ae-35e6-4bc2-bbc9-aa03eaf16ca6">
 
-Making some guesses ("10," "200" and "999999999") and then the guess, "84660919:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 12 29 AM" src="https://user-images.githubusercontent.com/71230219/161380581-92e5ce9b-d3b3-4beb-9469-7012357d635f.png">
+Making some guesses ("10," "200" and "999999999999999") and then the guess, "54632907:"
+<img width="1420" alt="Number Mode guesses" src="https://github.com/ngin102/guess-it/assets/71230219/92c7b520-f2aa-439f-b8b3-a874ff285506">
 
 Viewing the "Winner" modal (after pressing the enter Button for the player's correct guess). From this modal, the player can return to the "Index" by clicking on the Index Button:
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 14 57 AM" src="https://user-images.githubusercontent.com/71230219/161380641-842ee30b-f5b3-43e6-9ea1-3311dab91808.png">
+<img width="1420" alt="Number Mode Winner Modal" src="https://github.com/ngin102/guess-it/assets/71230219/69c4542a-4a63-4dd5-83c2-e14b0dbf7b49">
 
 Returning to the "Index" page (after clicking the Index Button on the "Winner" modal):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 35 59 AM" src="https://user-images.githubusercontent.com/71230219/161379320-f89beeab-0819-4fcd-9e6d-1f19bb2fec26.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
