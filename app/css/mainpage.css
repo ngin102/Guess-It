@@ -106,18 +106,25 @@ p#tries{
     margin: -1rem auto;
 }
 
-.toast-header {
+.toast-header, .modal-header {
     color: #295DCF;
     background-color: #D7C0D0;
 }
 
-.toast-body {
-    color: #295DCF; 
+.toast-body, .modal-body {
+    color: #000000; 
 }
 
 .btn-secondary {
     background-color: #D7C0D0;
-    color: #000000; 
+    color: #000000;
+    font-weight: bold; 
+}
+
+.btn-secondary:hover {
+    background-color: #295DCF;
+    color: #FFFF; 
+    font-weight: bold; 
 }
 
 #arrow_area{
