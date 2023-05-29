@@ -6,6 +6,7 @@
 }
 
 html, body {
+    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
     overflow-x: auto;
     height: 100%;
     margin: 0;
@@ -13,7 +14,6 @@ html, body {
 }
 
 body {
-    background: linear-gradient(180deg, #1D1E24 0%, #262736 100%);
     background-attachment: fixed;
     height: 100%;
 }

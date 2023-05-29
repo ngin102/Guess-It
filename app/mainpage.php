@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>Guess It</title>
+        <title>Guess It!</title>
         <meta name="description" content="Guess the hidden word in 6 tries. A new puzzle is available each day.">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
                 <img src="./icons/question.png" width = "50" height = "50" id = "questions" > </a>
             </div>
 
-            <h1 class ="title">GUESS IT</h1>
+            <h1 class ="title">GUESS IT!</h1>
 
             <div class="lbordimage">
                 <a href = "leaderboard.php">

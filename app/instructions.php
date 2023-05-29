@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Instructions</title>
+    <title>Guess It!</title>
     <link rel="stylesheet" href="./CSS/instructions.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
@@ -20,7 +20,7 @@
 
       <div class = "container" id = "text">
         <p class = "lead">
-          "Guess It" is a word-guessing game in which you must guess an English word. 
+          "Guess It!" is a word-guessing game in which you must guess an English word. 
           If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up.
           If it comes after, a red arrow will point down.
           Keep guessing until you "Guess It!"</p>
