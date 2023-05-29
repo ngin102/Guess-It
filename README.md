@@ -5,6 +5,8 @@
 ## Introduction
 “Guess It!” is a game where you need to guess an English word. While you make guesses, the website will tell you whether the word is alphabetically before or after the word you guessed. “Guess It!” has multiple modes for players to choose from.
 
+This is the repository for Version 2 of the game (this version of "Guess It!" has an updated look and layout).
+
 ### Team members
 | Team member  | Email Address       |
 |--------------|---------------------|
@@ -15,7 +17,7 @@
 ## Documentation
 * **[UI Design System](docs/ui_design_system.pdf)**: A document containing the set of standards for the colour palette, fonts, icons, buttons, UI components and form elements for "Guess It!"
 	- [Icons](app/icons): Icons used in the UI.
-* **[Installation](#installation)**: How to install "Guess It!" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
+* **[Installation](#installation)**: How to install "Guess It!" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and macOS, but a Windows Subsystem for Linux is required for their use on Windows.**
 * **[How to Start Developing](#how-to-start-developing)**: Steps taken to ensure that the application runs properly in the development environment.
 * **[Deployment](#deployment)**: Deploying the project using the provided helper `./deploy.sh` script.
 * **[Upgrades](#upgrades)**: Upgrading the project using the provided helper `./upgrade.sh` script.
@@ -32,18 +34,18 @@ This script requires [Homebrew](https://brew.sh) to prepare necessary components
 **Also note that all installation instructions and the helper script were made based on a Linux environment, as instructed in the project outline. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
 
 You will need the following technologies installed:
-* [PHP 8.1.2+](#php)
-* [PHPUnit 9.5.16+](#phpunit)
-* [Postgres 14.2+](#postgres) 
+* [PHP 8.2.6+](#php)
+* [PHPUnit 10.1.3+](#phpunit)
+* [Postgres 14.7+](#postgres) 
 
 
-The video below shows the helper `./setup.sh` script executing successfully. At the end of the video, we check that all required technologies were installed by checking the version of each technology in the terminal.
-[![Setup Script](https://img.youtube.com/vi/o4hFMYfEZEQ/0.jpg)](https://youtu.be/o4hFMYfEZEQ "Setup Script Running")
+The video below shows the helper `./setup.sh` script executing successfully (click the image to open the video). At the end of the video, we check that all required technologies were installed by checking the version of each technology in the terminal.
+[![Setup Script](https://img.youtube.com/vi/gfKfA8aALCU/0.jpg)](https://youtu.be/gfKfA8aALCU "Setup Script Running")
 
 
 ### PHP
 To run this project, you need PHP and a command line.
-The project was tested on `PHP 8.1.2`.
+The project was tested on `PHP 8.2.6`.
 
 The helper script uses the command `brew install php` to install PHP.
 
@@ -54,7 +56,7 @@ php --version
 
 The output of this command should be similar to: 
 ```
-PHP 8.1.2 (cli) (built: Jan 21 2022 04:34:05) (NTS)
+PHP 8.2.6 (cli) (built: Jan 21 2022 04:34:05) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
     with Zend OPcache v8.1.2, Copyright (c), by Zend Technologies
@@ -65,7 +67,7 @@ You can start the connection to the localhost using the helper `./server.sh` scr
 
 ### PHPUnit
 To run the php tests included with the project, you will also need to install [PHPUnit](https://phpunit.de).
-The PHPUnit tests were tested on `PHP 9.5.16`.
+The PHPUnit tests were tested on `PHP 10.1.3`.
 
 The helper script uses the command `brew install phpunit` to install PHPUnit.
 
@@ -76,7 +78,7 @@ phpunit --version
 
 The output of this command should be similar to: 
 ```
-PHPUnit 9.5.16 by Sebastian Bergmann and contributors.
+PHPUnit 10.1.3 by Sebastian Bergmann and contributors.
 ```
 
 ### Postgres
@@ -86,7 +88,7 @@ You must install the database locally.
 
 The helper script uses the command `brew install postgresql` to install Postgres.
 
-The project was tested on `PostgreSQL 14.2`
+The project was tested on `PostgreSQL 14.7 (Homebrew)`
 
 Check which version of Postgres you have installed on your device using the following command:
 ```bash
@@ -96,7 +98,7 @@ psql --version
 The output of this command should be similar to:
 
 ```bash
-psql (PostgreSQL) 14.2
+psql (PostgreSQL) 14.7 (Homebrew)
 ```
 
 #### Seeding the Postgres Database
@@ -120,7 +122,7 @@ INSERT 0 6
 INSERT 0 2777
 INSERT 0 121
 INSERT 0 166
-INSERT 0 369
+INSERT 0 377
 ```
 
 You should then be able to access the database using `psql` (use the following command):
@@ -151,11 +153,10 @@ postgres=# \dt guess_it.*
 There is also a set of [migrations](https://github.com/professor-forward/project-snm/tree/f/deliverable4/db/migrations), which track changes to our schema. Because there has not been a formal first release of our application previous to Deliverable 4, it is sufficient to use 
 ```./bin/db/create``` to add these migrations to the database.
 
-The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script.
+The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script (click the image to open the video).
 If the database is created and seeded and the server is running, you can then visit `http://localhost:4000` to see the application running. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-
-[![Create and Server Script](https://img.youtube.com/vi/d4lq2iZ0378/0.jpg)](https://youtu.be/d4lq2iZ0378 "Create and Server Script Running")
+[![Create and Server Script](https://img.youtube.com/vi/f7IIqScnFBQ/0.jpg)](https://youtu.be/f7IIqScnFBQ "Create and Server Script Running")
 
 
 ## How to Start Developing
@@ -170,7 +171,7 @@ If you are developing tests for the application, please view the [Testing Sectio
 
 The video below shows the execution of `./bin/db/create` and then the execution of the `./server.sh` script. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-[![Create and Server Script](https://img.youtube.com/vi/d4lq2iZ0378/0.jpg)](https://youtu.be/d4lq2iZ0378 "Create and Server Script Running")
+[![Create and Server Script](https://img.youtube.com/vi/f7IIqScnFBQ/0.jpg)](https://youtu.be/f7IIqScnFBQ "Create and Server Script Running")
 
 ## Deployment
 **A helper `./deploy.sh` script is provided to deploy the project.**
@@ -183,10 +184,9 @@ After completing the two steps above, the script will automatically zip up the c
 
 You can then visit `http://localhost:4000` to see the application running.
 
-The video below shows how `./deploy.sh` runs. All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
+The video below shows how `./deploy.sh` runs (click the image to open the video). All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them. The video also features a version of the application in which, every time the player selects "Regular Mode", an alert with the "Word of the Day" appears. This feature was only used for testing and was removed from the final application (the version of the application that is now implemented and found in this repository); no other functionality (demonstrated in the video) differs between this "testing" version and the final version of the application.
 
-
-[![Deploy Script](https://img.youtube.com/vi/lpdlDQssooA/0.jpg)](https://youtu.be/lpdlDQssooA "Deploy Script Running")
+[![Deploy Script](https://img.youtube.com/vi/huNU17In57k/0.jpg)](https://youtu.be/huNU17In57k "Deploy Script Running")
 
 
 ## Upgrades
@@ -202,11 +202,11 @@ After completing the two steps above, the script will automatically zip up the c
 
 You can then visit `http://localhost:4000` to see the application running.
 
-The video below shows how `./upgrade.sh` runs; we demo a change being made to the project (in the development environment) and how this change is reflected in the files in the temp folder once the script is called. All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
+The video below shows how `./upgrade.sh` runs; we demo a change being made to the project (in the development environment) and how this change is reflected in the files in the temp folder once the script is called (click the image to open the video). All necessary components that are needed to run the project were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
 The video below also shows the execution of `./upgrade.sh` such that the connection to the localhost is still running when the script is executed; the terminal indicates that a new connection can not be established, but this does not impact the project files being upgraded and your ability to run the upgraded project files without restarting the connection.
 
 
-[![Upgrade Script](https://img.youtube.com/vi/9ctGmzYPMAY/0.jpg)](https://youtu.be/9ctGmzYPMAY "Upgrade Script Running")
+[![Upgrades Script](https://img.youtube.com/vi/vmy0PBGDmOU/0.jpg)](https://youtu.be/vmy0PBGDmOU "Upgrades Script Running")
 
 
 
@@ -221,13 +221,12 @@ To run the helper script:
 
 The script will then check that you have all necessary components installed using `./setup.sh` before running the tests. 
 
-The video below shows the helper script successfully running. 
+The video below shows the helper script successfully running (click the image to open the video). 
 
-[![Tests Script](https://img.youtube.com/vi/F6BOB-6pHig/0.jpg)](https://youtu.be/F6BOB-6pHig "Tests Script Running")
+[![Tests Script](https://img.youtube.com/vi/eH4jihvtNMo/0.jpg)](https://youtu.be/eH4jihvtNMo "Tests Script Running")
 
 
 ### Manually Running the Tests
-#### Running the PHPUnit Tests
 You can manually run the six PHPUnit tests using [PHPUnit](https://phpunit.de). These are the tests found in the [phpUnit folder within the tests folder](tests/phpUnit).
 
 These tests can be run using the following command (after changing the directory to the project repository):
@@ -248,7 +247,7 @@ OK (6 tests, 6 assertions)
 ```
 
 ## How to Play
-"Guess It" is a word-guessing game in which you must guess an English word. If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up; if it comes after, a purple arrow will point down. Keep guessing until you "Guess It!"
+"Guess It!" is a word-guessing game in which you must guess an English word. If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up. If it comes after, a red arrow will point down. Keep guessing until you "Guess It!"
 
 #### Game Modes
 #### Regular Mode
@@ -271,9 +270,9 @@ If the game is too difficult for you and you need some assistance, don't worry, 
 
 
 ## Demo
-A video demo of our project **(this video has audio)**:
+A video demo of our project (**this video has audio**; click on the image to open the video):
 
-[![Demo](https://img.youtube.com/vi/dW0wHRrURuY/0.jpg)](https://youtu.be/dW0wHRrURuY "Guess It Demo")
+[![Demo](https://img.youtube.com/vi/D-zZ0QyAfnU/0.jpg)](https://youtu.be/D-zZ0QyAfnU "Guess It! Demo")
 
 ### Screenshots
 The video demo as a set of screenshots (screenshots of available features).
