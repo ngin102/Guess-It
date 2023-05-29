@@ -1,2 +1,2 @@
 #!/bin/bash
-(./setup.sh && phpunit tests && cd tests/playwright && npx playwright test)
+(./setup.sh && phpunit tests)

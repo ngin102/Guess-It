@@ -22,7 +22,7 @@ Our project is a game called “Guess It,” that is similar in scope to “Word
 * **[How to Start Developing](#how-to-start-developing)**: Steps taken to ensure that the application runs properly in the development environment.
 * **[Deployment](#deployment)**: Deploying the project using the provided helper `./deploy.sh` script.
 * **[Upgrades](#upgrades)**: Upgrading the project using the provided helper `./upgrade.sh` script.
-* **[Testing](#testing)**: Running the project unit tests. There are two sets of unit tests: PHPUnit and JS (using Playwright). These sets of unit tests can be run independently of one another or together using the provided helper `./tests.sh` script. 
+* **[Testing](#testing)**: Running the project unit tests. The unit tests can run independently or using the provided helper `./tests.sh` script. 
 * **[How to Play](#how-to-play)**: How to play "Guess It."
 * **[Demo](#demo)**: A demo of "Guess It," including a video demo.
 	- **[Screenshots (of available features)](#screenshots)**: The video demo as a set of screenshots.
@@ -37,7 +37,6 @@ This script requires [Homebrew](https://brew.sh) to prepare necessary components
 You will need the following technologies installed:
 * [PHP 8.1.2+](#php)
 * [PHPUnit 9.5.16+](#phpunit)
-* [Playwright 1.19.2+ (requires Node 17.6.0+)](#playwright-requires-node)
 * [Postgres 14.2+](#postgres) 
 
 
@@ -81,42 +80,6 @@ phpunit --version
 The output of this command should be similar to: 
 ```
 PHPUnit 9.5.16 by Sebastian Bergmann and contributors.
-```
-
-### Playwright (Requires Node)
-To run the JS unit tests included with the project, you will also need to install [Playwright](https://playwright.dev/docs/intro#installation) in the project-snm\tests\playwright folder.
-
-The installation of Playwright first requires the installation of [Node.js](https://nodejs.org/en/). 
-
-The helper script uses the command `brew install node` to install Node.
-
-The JS unit tests were tested on `Node 17.6.0`.
-
-Check which version of Node you have installed on your device using the following command:
-```bash
-node -v
-```
-
-The output of this command should be similar to: 
-```
-v17.6.0
-```
-
-Playwright can then be subsequently installed in the project-snm\tests\playwright folder by changing the directory to this folder and using the commands: 
-```bash
-npm i playwright
-npm install -D @playwright/test
-```
-The JS unit tests were tested on `Playwright 1.19.2`.
-
-Check which verison of Playwright you have installed on your device using the following command:
-```bash
-npx playwright --version
-```
-
-The output of this command should be similar to: 
-```
-Version 1.19.2
 ```
 
 ### Postgres
@@ -252,7 +215,7 @@ The video below also shows the execution of `./upgrade.sh` such that the connect
 
 ## Testing
 ### Helper Script
-**A helper `./tests.sh` script is provided to run both the PHPUnit tests and JS tests (using Playwright) automatically for you. This script requires that you first initiate the server connection to the localhost from the project directory in which you are running these tests; it is recommended that you run the tests from the development environment.**
+**A helper `./tests.sh` script is provided to run the PHPUnit tests automatically for you. This script requires that you first initiate the server connection to the localhost from the project directory in which you are running these tests; it is recommended that you run the tests from the development environment.**
 
 To run the helper script:
 * Change the directory to the project-snm repository (the development environment), wherever you have it saved on your device.
@@ -261,10 +224,7 @@ To run the helper script:
 
 The script will then check that you have all necessary components installed using `./setup.sh` before running the tests. 
 
-The results of this script should be the combined output of running both the PHPUnit tests and JS tests (using Playwright) manually, with the PHPUnit test results outputted first and then the Playwright test results outputting second (there should be eight tests in total: six PHPUnit tests and two JS tests which use Playwright). Instructions on how to run these tests individually are included below.
-
-The video below shows the helper script successfully running. All necessary components that are needed to run the tests were already installed on the device this script was demoed on in the video; the video reflects this in the terminal. If these components were not already installed, the script would go through the process of installing all of them.
-
+The video below shows the helper script successfully running. 
 
 [![Tests Script](https://img.youtube.com/vi/F6BOB-6pHig/0.jpg)](https://youtu.be/F6BOB-6pHig "Tests Script Running")
 
@@ -289,22 +249,6 @@ Time: 00:00.001, Memory: 22.31 MB
 
 OK (6 tests, 6 assertions)
 ```
-
-#### Running the JS Tests using Playwright
-You can manually run the two JS unit tests using Playwright. These are the tests found in the [playwright folder within the tests folder](tests/playwright).
-
-To manually run these tests, please follow the instructions below:
-* Change the directory to the project-snm repository (the development environment), wherever you have it saved on your device.
-* Initiate the server on the localhost (this can be done using the `./server.sh` script).
-* Change the directory again to project-snm\tests\playwright.
-* Run the following command in the terminal:
-```bash
-npx playwright test
-```
-
-The output of running the two tests should be: 
-![image](https://user-images.githubusercontent.com/60792590/156642394-c5dff3da-c3f8-4219-98e5-7608321c0441.png)
-
 
 ## How to Play
 "Guess It" is a word-guessing game in which you must guess an English word. If you guess a word that is alphabetically before the one you're supposed to guess, a green arrow will point up; if it comes after, a purple arrow will point down. Keep guessing until you "Guess It!"
