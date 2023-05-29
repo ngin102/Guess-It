@@ -8,19 +8,21 @@
          <link rel="stylesheet" href="./CSS/index.css">
     </head>
     <body>     
-        <div class="container" id = "main">
-            <div class="imagequestion">
-                <a href = "instructions.php">
-                <img src="./icons/question.png" width = "50" height = "50" id ="quesitons" > </a>
-            </div>
-            <h1 class ="title">GUESS IT</h1>
-            <h2 class= "subtitle">Choose your mode</h2>
-            <div class="btn-container">
-                <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode1">Regular Mode</button> </a>
-                <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode2">Random Mode</button> </a>
-                <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode3">Celebrity Mode</button> </a>
-                <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode4">Education Mode</button> </a>
-                <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode5">Number Mode</button> </a>
+        <div class = "parent">
+            <div class = "container" id = "main">
+                <h1 class = "title">GUESS IT</h1>
+                <div class="imagequestion">
+                    <a href = "instructions.php">
+                    <img src="./icons/question.png" width = "50" height = "50" id ="quesitons" > </a>
+                </div>
+                <h2 class = "subtitle">Choose your mode</h2>
+                <div class="btn-container">
+                    <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode1">Regular Mode</button> </a>
+                    <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode2">Random Mode</button> </a>
+                    <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode3">Celebrity Mode</button> </a>
+                    <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode4">Education Mode</button> </a>
+                    <a href = "mainpage.php"> <button class="mode btn-primary btn-lg" id = "mode5">Number Mode</button> </a>
+                </div>
             </div>
         </div>
 

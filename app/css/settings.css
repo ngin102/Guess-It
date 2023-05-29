@@ -6,14 +6,14 @@
 }
 
 html, body {
+    overflow-x: auto;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-
 body {
-    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
+    background: linear-gradient(180deg, #1D1E24 0%, #262736 100%);
     background-attachment: fixed;
     height: 100%;
 }
@@ -125,14 +125,14 @@ table.settings_table td {
     height: 3.75rem;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     margin-top: 1.25rem;
     background-color: #D7C0D0;
     color: black;
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 950px)
 {
     h1.title {
         font-size: 2rem;

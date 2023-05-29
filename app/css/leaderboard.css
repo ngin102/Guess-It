@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
+    background: linear-gradient(180deg, #1D1E24 0%, #262736 100%);
     background-attachment: fixed;
     height: 100%;
     font-weight: normal;
@@ -28,12 +28,21 @@ h1.title {
     margin-left: 1rem;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto;
+    max-width: 70vw;
+}
+
 .container#main{
     margin-top: 3rem;
 }
 
 p.date {
     color: #FFFF;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -75,14 +84,6 @@ table.leaderboard_table tr:hover {
     text-align: center;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin: 0 auto;
-    max-width: 70vw;
-}
-
 .back{
     flex-basis: 0%;
     cursor: pointer;
@@ -93,7 +94,7 @@ table.leaderboard_table tr:hover {
     scale: 1.09;
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 950px)
 {
     h1.title {
         font-size: 2rem;

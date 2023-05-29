@@ -15,7 +15,7 @@
           <img onclick = "history.back()" src="./icons/back.png" width = "50" height = "50" id = "back_instructions" > </a>
         </div>
 
-        <div class = "titlebox"> <h1 class = "title">HOW TO PLAY</h1> </div>
+        <div> <h1 class = "title">HOW TO PLAY</h1> </div>
       </div>
 
       <div class = "container" id = "text">

@@ -21,7 +21,8 @@
         <div class = "container" id = main>
             <div class = "back">
               <img src="./icons/back.png" width = "50" height = "50" id = "back_lderbrd"></div>
-            <div class = "titlebox"> <h1 class = "title">LEADERBOARD</h1> </div>
+
+            <div> <h1 class = "title">LEADERBOARD</h1> </div>
         </div>
 
         <div class = "container">
@@ -31,6 +32,7 @@
         <?php
             include 'PHP/view_data.php';
         ?>
+        <br>
     </body>
     
     <script src = "./js/leader.js"></script>

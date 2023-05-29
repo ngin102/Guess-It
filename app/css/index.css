@@ -14,12 +14,32 @@ html, body {
 body {
   background: linear-gradient(180deg, #1D1E24 0%, #262730 100%);
   background-attachment: fixed;
+  height: 100%;
+  font-weight: normal;
+  overflow-x: auto;
+}
+
+.parent {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -0.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
 }
 
 h1.title {
   font-family: 'Renegade Pursuit', sans-serif;
   font-size: 4.375rem;
   font-weight: bold;
+  text-align: center;
   color: #F0D78C;
 }
 
@@ -31,17 +51,21 @@ h2.subtitle {
 }
 
 .btn-container {
-  width: 30%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .mode {
   cursor: pointer;
-  width: 100%;
+  width: 20rem;
   height: 3.75rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 0.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   background-color: #D7C0D0;
   color: #000000;
   overflow: hidden;
@@ -49,19 +73,11 @@ h2.subtitle {
   white-space: nowrap;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: -3rem auto;
-  height: 100vh;
-}
-
-.imagequestion{
+.imagequestion {
   flex-basis: 0%;
+  margin-bottom: 1rem;
 }
 
-.imagequestion:hover{
+.imagequestion:hover {
   scale: 1.09;
 }

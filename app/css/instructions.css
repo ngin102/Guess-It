@@ -28,9 +28,21 @@ h1.title {
   margin-left: 1rem;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 0 3rem 0;
+  max-width: 70vw;
+}
+
 .container#main{
   margin-top: 3rem;
   margin-bottom: 0;
+}
+
+.container#text{
+  flex-direction: column;
 }
 
 h3.subtitle {
@@ -72,18 +84,6 @@ p.lead {
 
 .back:hover{
   scale: 1.09;
-}
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  margin: 0 0 3rem 0;
-  max-width: 70vw;
-}
-
-.container#text{
-  flex-direction: column;
 }
 
 .icon {

@@ -41,10 +41,6 @@ get_word.open("get", "./PHP/retrieve_word.php", true);
 get_word.send();
 localStorage.setItem('win', true);
 
-
-
-
-
 // The localeCompare() method returns sort order -1, 1 or 0 (before, after or equal).
 function search(ele) {
 
@@ -118,7 +114,6 @@ function lose(string_guess) {
   document.getElementById("modal_random").addEventListener('click', reset)
 }
 
-
 //displays the content and arrow associated with the word
 function display(content, arrow) {
   const list_guess = document.getElementById("arrow_area");
@@ -149,7 +144,6 @@ function win_regular(content) {
 
   localStorage.setItem('win', false)
   localStorage.setItem('date', day_of_word)
-
 
   let leaderboard_prompt = "";
   while (leaderboard_prompt == "" || leaderboard_prompt == null) {
@@ -210,7 +204,6 @@ function redirect(content, mode) {
   }
   
 }
-
 
 //Youve already played the regular mode for the day!
 function already() {
