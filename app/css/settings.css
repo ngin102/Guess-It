@@ -76,7 +76,7 @@ table.settings_table td {
   }
 
 table.settings_table th, td { 
-    border: 1px solid #FFFF; 
+    border: 1px solid #FFFFFF; 
     padding: 15px;
     margin-top: 5rem;
 }
@@ -106,7 +106,7 @@ table.settings_table td {
 .checkmark {
     cursor: pointer;
     position: absolute;
-    background-color: #FFFF;
+    background-color: #FFFFFF;
     top: 0.0625rem;
     left: 0.0625rem;
     height: 1.5625rem;
