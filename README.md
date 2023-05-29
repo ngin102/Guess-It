@@ -1,12 +1,9 @@
-# Guess It
+# Guess It!
 **[Click here to view a demo (video and screenshots) of our project.](#demo)**
-
-<img width="1033" alt="Screen Shot 2022-03-01 at 7 03 37 PM" src="https://user-images.githubusercontent.com/71230219/156541685-a9966e6b-eb85-4cd4-87b3-1dc20e13e99f.png">
+<img width="1033" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/43a8aa17-e754-4361-bd1a-43e3b9dd14b2">
 
 ## Introduction
-Our project is a game called “Guess It,” that is similar in scope to “Wordle” (an example shown in class).
-
-“Guess It” is a game where you need to guess an English word. While you make guesses, the website will tell you whether the word is alphabetically before or after the word you guessed. “Guess It” has multiple modes for players to choose from.
+“Guess It!” is a game where you need to guess an English word. While you make guesses, the website will tell you whether the word is alphabetically before or after the word you guessed. “Guess It!” has multiple modes for players to choose from.
 
 ### Team members
 | Team member  | Email Address       |
@@ -16,15 +13,15 @@ Our project is a game called “Guess It,” that is similar in scope to “Word
 | Marija Bolic | mboli027@uottawa.ca |
 
 ## Documentation
-* **[UI Design System](docs/ui_design_system.pdf)**: A document containing the set of standards for the colour palette, fonts, icons, buttons, UI components and form elements for "Guess It."
+* **[UI Design System](docs/ui_design_system.pdf)**: A document containing the set of standards for the colour palette, fonts, icons, buttons, UI components and form elements for "Guess It!"
 	- [Icons](app/icons): Icons used in the UI.
-* **[Installation](#installation)**: How to install "Guess It" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
+* **[Installation](#installation)**: How to install "Guess It!" on your device. **A helper `./setup.sh` script is provided to get necessary components working. This script requires [Homebrew](https://brew.sh) to prepare necessary components for the project; install Homebrew before running the script. All installation instructions and the helper script were made based on a Linux environment. All scripts should execute natively on Linux and MacOS, but a Windows Subsystem for Linux is required for their use on Windows.**
 * **[How to Start Developing](#how-to-start-developing)**: Steps taken to ensure that the application runs properly in the development environment.
 * **[Deployment](#deployment)**: Deploying the project using the provided helper `./deploy.sh` script.
 * **[Upgrades](#upgrades)**: Upgrading the project using the provided helper `./upgrade.sh` script.
 * **[Testing](#testing)**: Running the project unit tests. The unit tests can run independently or using the provided helper `./tests.sh` script. 
-* **[How to Play](#how-to-play)**: How to play "Guess It."
-* **[Demo](#demo)**: A demo of "Guess It," including a video demo.
+* **[How to Play](#how-to-play)**: How to play "Guess It!"
+* **[Demo](#demo)**: A demo of "Guess It!" – including a video demo.
 	- **[Screenshots (of available features)](#screenshots)**: The video demo as a set of screenshots.
 
 ## Installation
@@ -282,55 +279,54 @@ A video demo of our project **(this video has audio)**:
 The video demo as a set of screenshots (screenshots of available features).
 
 "Index" page (the first page you view when you launch the application):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 02 14 AM" src="https://user-images.githubusercontent.com/71230219/161378135-4a3efced-3771-4b57-a4f6-3d907503566f.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/af9e0983-ff7a-4d6e-851a-d1f35f46c9be">
 
 Viewing the "How to Play" page (after clicking the Question Mark icon on the "Index" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 03 14 AM" src="https://user-images.githubusercontent.com/71230219/161378173-233c130f-b41c-40df-b0d1-3977d22d1b53.png">
+<img width="1420" alt="How to Play page" src="https://github.com/ngin102/guess-it/assets/71230219/509615cc-414d-42a9-b93f-4fef7deb8494">
 
 Returning to the "Index" page (after clicking the Back Arrow icon on the "How to Play" page) and highlighting the Regular Mode Button:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
+<img width="1420" alt="Index page (after clicking the Back Arrow icon on the How to Play page) and highlighting the Regular Mode Button" src="https://github.com/ngin102/guess-it/assets/71230219/83334dd1-f67a-4dd9-9d1b-7479a41e5131">
 
 Playing the Game in "Regular Mode" (after clicking the Regular Mode Button on the "Index" page). From this "Mainpage," the player can click on the Back Arrow icon to return to the "Index" page, on the Question Mark icon to view the "How to Play" page, on the Trophy icon to view the "Leaderboard" page, on the Lightbulb icon to view a hint, and on the Gears icon to view the "Settings" page:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 05 48 AM" src="https://user-images.githubusercontent.com/71230219/161378274-49333dde-ae04-488b-bc67-217117194d56.png">
+<img width="1033" alt="Guess It! Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/43a8aa17-e754-4361-bd1a-43e3b9dd14b2">
 
 Viewing the "Leaderboard" page (after clicking the Trophy icon on the "Index" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 12 40 AM" src="https://user-images.githubusercontent.com/71230219/161378543-dd160e3f-4a01-431e-b7ad-232e41e0fea7.png">
+<img width="1420" alt="Leaderboard page" src="https://github.com/ngin102/guess-it/assets/71230219/ef67cb16-6692-40cf-b8e5-1c16bf855fcf">
 
-Viewing a Hint (after returning to the "Index" page by clicking on the Back Arrow icon on the "Leaderboard" page and clicking on the Lightbulb icon on the "Mainpage"):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 13 45 AM" src="https://user-images.githubusercontent.com/71230219/161378577-670bfe18-5e53-4d3f-9765-9a032ca1b685.png">
+Viewing a Hint (after returning to the "Mainpage" by clicking on the Back Arrow icon on the "Leaderboard" page and clicking on the Lightbulb icon on the "Mainpage"):
+<img width="1420" alt="Viewing a Hint on the Mainpage" src="https://github.com/ngin102/guess-it/assets/71230219/18a1b70f-2101-43d8-ae67-82e685f48542">
 
 Viewing the "Settings" page (after clicking the Gears icon on the "Mainpage"):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 18 22 AM" src="https://user-images.githubusercontent.com/71230219/161380750-154a2a00-c827-4b60-bcbd-b73c49e5bf0e.png">
+<img width="1420" alt="Settings page" src="https://github.com/ngin102/guess-it/assets/71230219/7441c540-801f-4d92-9ad2-150a6cec6b62">
 
 Returning to the "Index" page (after clicking the Change Game Mode Button on the "Settings" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
+<img width="1420" alt="Index page" src="https://github.com/ngin102/guess-it/assets/71230219/af9e0983-ff7a-4d6e-851a-d1f35f46c9be">
 
-Inputting "apple" as a guess on the "Mainpage" (after clicking the Regular Mode Button on the "Index" page):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 19 38 AM" src="https://user-images.githubusercontent.com/71230219/161380788-504e71c9-74af-429c-aa60-5763e77c876d.png">
+Inputting "Apple" as a guess on the "Mainpage" (after clicking the Regular Mode Button on the "Index" page):
+<img width="1420" alt="Inputting Apple as a guess" src="https://github.com/ngin102/guess-it/assets/71230219/1a78e5b9-ca0a-41eb-95ce-b3fe64164cc3">
 
-Guessing "apple;" the Purple Arrow indicates the word the player needs to guess is alphabetically after "apple" (clicking the enter Button after the steps in the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 19 58 AM" src="https://user-images.githubusercontent.com/71230219/161380801-0a52d9cd-73ea-4f06-afe2-138ced54f963.png">
+Guessing "Apple;" the Red Arrow indicates the word the player needs to guess is alphabetically after "apple" (clicking the enter Button after the steps in the previous screenshot):
+<img width="1420" alt="Red arrow appears after inputting Apple" src="https://github.com/ngin102/guess-it/assets/71230219/e5136e43-1138-483d-ad4f-837708fb176f">
 
-Inputting "zoo" as a guess on the "Mainpage:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 20 38 AM" src="https://user-images.githubusercontent.com/71230219/161380829-52692dd8-74b9-4c1a-b6de-eff516af2986.png">
+Inputting "Zoo" as a guess on the "Mainpage:"
+<img width="1420" alt="Inputting Zoo as a guess" src="https://github.com/ngin102/guess-it/assets/71230219/e937a7d4-47c5-4c57-b56c-473810cdd712">
+ 
+Guessing "Zoo;" the Green Arrow indicates the word the player needs to guess is alphabetically before "zoo" (clicking the enter Button after the steps in the previous screenshot):
+<img width="1420" alt="Green arrow appears after inputting Zoo" src="https://github.com/ngin102/guess-it/assets/71230219/baf6c1c8-b3d0-4ff8-b136-2c63831f3005">
 
-Guessing "zoo;" the Green Arrow indicates the word the player needs to guess is alphabetically before "zoo" (clicking the enter Button after the steps in the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 7 20 58 AM" src="https://user-images.githubusercontent.com/71230219/161380838-fa1cc05c-8e85-4810-8f11-45dc763e37c4.png">
+Inputting "Parabola" as a guess on the "Mainpage:"
+<img width="1420" alt="Inputting Parabola as a guess" src="https://github.com/ngin102/guess-it/assets/71230219/992c931a-efc0-4d32-b0de-9bde19c44116">
 
-Inputting "runny" as a guess on the "Mainpage:"
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 25 22 AM" src="https://user-images.githubusercontent.com/71230219/161378996-77cfa8ea-746c-4100-9a9e-0773701bbc37.png">
-
-"runny" was the correct guess. The player is prompted to enter their name for a Leaderboard entry:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 27 54 AM" src="https://user-images.githubusercontent.com/71230219/161379083-a2e5ba18-0070-43ec-b77f-253d9ab65787.png">
+"Parabola" was the correct guess. The player is prompted to enter their name for a Leaderboard entry:
+<img width="1420" alt="Leaderboard prompt" src="https://github.com/ngin102/guess-it/assets/71230219/948da8a3-418d-4369-bf2d-9ceb140ceb94">
 
 Inputting "Alan" as the player name for the Leaderboard entry:
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 28 40 AM" src="https://user-images.githubusercontent.com/71230219/161379104-4781bac6-5929-4866-9230-1832f3b798d4.png">
+<img width="1420" alt="Inputting Alan for Leaderboard entry" src="https://github.com/ngin102/guess-it/assets/71230219/1c59f436-129b-4047-ad34-cf44a67a9c18">
 
-Viewing the "Winner" modal after pressing OK on the prompt from the previous screenshot. From this modal, the player can return to the "Index" by clicking on the Index Button, can view the "Leaderboard" by clicking the Leaderboard Button, and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "runny," which is underlined and blue):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 29 05 AM" src="https://user-images.githubusercontent.com/71230219/161379121-b83574c9-81a9-493a-921e-7de0593297ef.png">
+Viewing the "Winner" modal after pressing OK on the prompt from the previous screenshot. From this modal, the player can return to the "Index" by clicking on the Index Button, can view the "Leaderboard" by clicking the Leaderboard Button, and can view the Wikipedia article for the word that needed to be guessed by clicking the provided hyperlink (in this case, the word, "parabola," which is underlined and blue):
+<img width="1420" alt="Winnder modal" src="https://github.com/ngin102/guess-it/assets/71230219/adcc14c5-f5f0-40e0-91e3-df1a6ff00a09"> 
 
-Viewing the "Leaderboard" and the newly added Leaderboard entry after clicking the Leaderboard Button on the modal (from the previous screenshot):
-<img width="1420" alt="Screen Shot 2022-04-02 at 6 32 01 AM" src="https://user-images.githubusercontent.com/71230219/161379184-d8fa627c-1e1e-4eb0-ad83-f4a551e93e1b.png">
+Viewing the "Leaderboard" and the newly added Leaderboard entry after clicking the Leaderboard Button on the modal (from the previous screenshot):!
 
 Returning to the "Index" page (after clicking the Back Arrow icon on the "Leaderboard" page):
 <img width="1420" alt="Screen Shot 2022-04-02 at 6 04 20 AM" src="https://user-images.githubusercontent.com/71230219/161378216-3fbb08bf-c62c-4207-a4eb-845b9f8c784b.png">
